@@ -35,12 +35,43 @@
   background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center/200% auto;
   animation: about 1s linear infinite;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @keyframes about {
   100% {
     background-position-x: 200%;
+  }
+}
+.p-visual__main__img {
+  width: 100vw;
+}
+
+.p-visual__main__inner {
+  position: relative;
+}
+
+.p-visual__main__title {
+  position: absolute;
+  display: inline-block;
+  top: 15%;
+  left: 10%;
+  font-size: 50px;
+  background: -webkit-linear-gradient(135deg, #1e26cb 0%, #5ad219 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientEffect 2.5s infinite alternate;
+  background-size: 300%;
+}
+
+@keyframes gradientEffect {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
   }
 }
 

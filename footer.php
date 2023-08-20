@@ -1,8 +1,12 @@
-<footer>
+    <footer class="l-footer">
+        <div class="l-footer__inner">
 
-</footer>
+            <address class="c-text--copyright"><small>&copy;2023&nbsp;&nbsp; <?php bloginfo( 'name' ); ?></small></address>
 
-<?php wp_footer(); ?>
+        </div>
+    </footer>
+
+    <?php wp_footer(); ?>
 </body>
 
 </html>
