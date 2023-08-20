@@ -1,0 +1,23 @@
+{
+  "name": "yosu-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshikazu-ishitsuka/Yosu-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoshikazu-ishitsuka/Yosu-Portfolio/issues"
+  },
+  "homepage": "https://github.com/yoshikazu-ishitsuka/Yosu-Portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}
