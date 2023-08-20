@@ -1,3 +1,20 @@
 .p-navigation__menu {
   display: flex;
 }
+
+.p-navigation__menu__item {
+  margin: 0 15px;
+  
+  &:hover{
+    background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center/200% auto;
+    animation: about 1s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes about {
+  100% {
+    background-position-x: 200%;
+  }
+}

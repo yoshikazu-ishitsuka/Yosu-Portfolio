@@ -1,7 +1,30 @@
 @charset "UTF-8";
 
-@use "foundation";
-@use "layout";
-@use "object/component/";
-@use "object/project/";
-@use "object/utility/";
+
+/* foundation */
+@use "foundation/base";
+@use "foundation/global";
+@use "foundation/mixin";
+@use "foundation/variables";
+
+
+/* layout */
+@use "layout/footer";
+@use "layout/header";
+@use "layout/main";
+@use "layout/sidebar";
+
+
+/* object */
+
+// component
+@use "object/component/title";
+
+// project
+@use "object/project/navigation";
+
+// utility
+
+// @use "object/component/";
+// @use "object/project/";
+// @use "object/utility/";

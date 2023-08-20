@@ -11,10 +11,34 @@
 <?php wp_body_open(); ?>
     <header class="l-header">
         <div class="l-header__inner">
-            
+            <h1 class="c-title">
+                <a href="<?php echo esc_url( home_url() ); ?>">
+                    <?php bloginfo('name'); ?>
+                </a>
+            </h1>
+            <nav class="p-navigation">
+                <ul class="p-navigation__menu">
+                    <?php
+                        wp_nav_menu( array (
+                            'menu'            => 'header-menu',
+                            'theme_location'  => 'header-menu',
+                            'container'       => false,
+                            'container_class' => '', // container class (nav, div)
+                            'menu_class'      => '', // ul class
+                            'menu_id'         => '',
+                            'items_wrap'      => '%3$s',
+                            'add_li_class'    => 'p-navigation__menu__item'
+
+                        ));
+                    ?>
+                    <!-- <li class="p-navigation__menu__item"><a href="">制作実績</a></li>
+                    <li class="p-navigation__menu__item"><a href="">スキル</a></li>
+                    <li class="p-navigation__menu__item"><a href="">私について</a></li>
+                    <li class="p-navigation__menu__item"><a href="">お問い合わせ</a></li> -->
+                </ul>
+            </nav>
+
         </div>
 
     </header>
     
-</body>
-</html>

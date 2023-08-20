@@ -1,4 +1,12 @@
 .l-header {
-  background-color: aquamarine;
-  
+  background-color: beige;
+  height: 70px;
+}
+
+.l-header__inner {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 }
