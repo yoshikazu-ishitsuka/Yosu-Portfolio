@@ -38,13 +38,27 @@ body {
   font-family: serif;
 }
 
+.c-text__underline::after {
+  content: "";
+  display: inline-block;
+  background-color: #000;
+  position: absolute;
+}
+
 .c-title {
   font-weight: 700;
   font-size: 24px;
 }
 
+.c-title__profile {
+  position: relative;
+  font-size: 24px;
+}
+
 .p-content {
-  height: 500px;
+  width: 100%;
+  height: 1500px;
+  padding: 0 3%;
 }
 
 .p-navigation__menu {
@@ -67,6 +81,55 @@ body {
     background-position-x: 200%;
   }
 }
+.p-news {
+  width: 100%;
+  height: 200px;
+}
+
+.p-profile {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.p-profile__inner {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-profile__inner dt {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.p-profile__inner .c-text__underline::after {
+  width: 80px;
+  height: 1px;
+  bottom: -5px;
+  left: calc(50% - 40px);
+}
+.p-profile__inner .c-text__undertext::before {
+  content: "profile";
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: serif;
+  width: 110px;
+  height: 1px;
+  bottom: -10px;
+  left: calc(50% - 55px);
+}
+
+.p-profile__img {
+  width: 50%;
+  height: 100%;
+}
+.p-profile__img img {
+  width: 100%;
+}
+
 .p-visual__main__img {
   width: 100vw;
 }

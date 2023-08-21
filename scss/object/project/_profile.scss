@@ -1,0 +1,49 @@
+.p-profile {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.p-profile__inner {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  dt {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .c-text__underline::after {
+    width: 80px;
+    height: 1px;
+    bottom: -5px;
+    left: calc(50% - 40px)
+  }
+
+  .c-text__undertext::before {
+    content: "profile";
+    display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: serif;
+    width: 110px;
+    height: 1px;
+    bottom: -10px;
+    left: calc(50% - 55px)
+
+  }
+}
+
+.p-profile__img {
+  width: 50%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    // height: 100%;
+  }
+}

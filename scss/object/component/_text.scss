@@ -1,3 +1,10 @@
 .c-text__copyright{
   font-family: serif;
 }
+
+.c-text__underline::after {
+    content: "";
+    display: inline-block;
+    background-color: #000;
+    position: absolute;
+  }
