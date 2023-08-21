@@ -7,6 +7,9 @@
                     <?php bloginfo( 'description' ); ?>
                 </h2>
             </div>
+            <section class="p-content">
+
+            </section>
 
         </article>
         

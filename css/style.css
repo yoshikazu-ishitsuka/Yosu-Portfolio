@@ -5,6 +5,12 @@
 }
 
 /* layout */
+.l-footer {
+  width: 100vw;
+  height: 100px;
+  background-color: beige;
+}
+
 .l-header {
   background-color: beige;
   height: 70px;
@@ -19,9 +25,17 @@
 }
 
 /* object */
+.c-text__copyright {
+  text-align: center;
+}
+
 .c-title {
   font-weight: 700;
   font-size: 24px;
+}
+
+.p-content {
+  height: 500px;
 }
 
 .p-navigation__menu {
@@ -58,7 +72,7 @@
   top: 15%;
   left: 10%;
   font-size: 50px;
-  background: -webkit-linear-gradient(135deg, #1e26cb 0%, #5ad219 100%);
+  background: -webkit-linear-gradient(180deg, #1e26cb 0%, #fcfafc 30%, #5cff04 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

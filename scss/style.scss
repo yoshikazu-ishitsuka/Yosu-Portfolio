@@ -18,9 +18,11 @@
 /* object */
 
 // component
+@use "object/component/text";
 @use "object/component/title";
 
 // project
+@use "object/project/content";
 @use "object/project/navigation";
 @use "object/project/visual";
 
