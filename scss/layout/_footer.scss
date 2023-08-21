@@ -1,6 +1,13 @@
 .l-footer {
   width: 100vw;
   height: 100px;
-  background-color: beige;
-  
+  background-color: beige;  
+}
+
+.l-footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100px;
+  padding-bottom: 1%;
 }
