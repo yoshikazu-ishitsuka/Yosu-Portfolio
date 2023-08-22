@@ -1,6 +1,16 @@
+@use "../../foundation/global" as g;
+
 .c-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 10px;
+
+  @media ( min-width: 375px ) {
+    font-size: 16px;
+  }
+  
+  @include g.breakpoint( tablet ) {
+    font-size: 24px;
+  }
 }
 
 .c-title__profile {

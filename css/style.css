@@ -30,7 +30,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 10px;
+}
+@media (min-width: 521px) {
+  .l-header__inner {
+    padding: 0 30px;
+  }
 }
 
 /* object */
@@ -47,7 +52,17 @@ body {
 
 .c-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 10px;
+}
+@media (min-width: 375px) {
+  .c-title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 521px) {
+  .c-title {
+    font-size: 24px;
+  }
 }
 
 .c-title__profile {
@@ -66,7 +81,14 @@ body {
 }
 
 .p-navigation__menu__item {
-  margin: 0 15px;
+  font-size: 11px;
+  margin: 0 5px;
+}
+@media (min-width: 521px) {
+  .p-navigation__menu__item {
+    font-size: 16px;
+    margin: 0 15px;
+  }
 }
 .p-navigation__menu__item:hover {
   background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center/200% auto;
@@ -155,13 +177,18 @@ body {
   display: inline-block;
   top: 15%;
   left: 10%;
-  font-size: 50px;
+  font-size: 24px;
   background: -webkit-linear-gradient(180deg, #1e26cb 0%, #fcfafc 30%, #5cff04 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientEffect 2.5s infinite alternate;
   background-size: 300%;
+}
+@media (min-width: 521px) {
+  .p-visual__main__title {
+    font-size: 50px;
+  }
 }
 
 @keyframes gradientEffect {
