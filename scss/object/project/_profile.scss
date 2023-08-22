@@ -11,11 +11,6 @@
   flex-direction: column;
   align-items: center;
 
-  dt {
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-
   .c-text__underline::after {
     width: 80px;
     height: 1px;
@@ -33,9 +28,27 @@
     width: 110px;
     height: 1px;
     bottom: -10px;
-    left: calc(50% - 55px)
-
+    left: calc(50% - 25px)
   }
+
+    .personal {
+      text-align: left;
+
+      span {
+        font-family: serif;
+        font-size: 14px;
+        font-weight: 100;
+        display: inline-block;
+        margin-top: 4rem;
+      }
+    }
+
+    .introduction {
+      margin: 2rem 1.5rem 0 0;
+      font-family: serif;
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+    }
 }
 
 .p-profile__img {

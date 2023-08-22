@@ -99,10 +99,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.p-profile__inner dt {
-  margin-bottom: 3rem;
-  text-align: center;
-}
 .p-profile__inner .c-text__underline::after {
   width: 80px;
   height: 1px;
@@ -119,7 +115,23 @@ body {
   width: 110px;
   height: 1px;
   bottom: -10px;
-  left: calc(50% - 55px);
+  left: calc(50% - 25px);
+}
+.p-profile__inner .personal {
+  text-align: left;
+}
+.p-profile__inner .personal span {
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 100;
+  display: inline-block;
+  margin-top: 4rem;
+}
+.p-profile__inner .introduction {
+  margin: 2rem 1.5rem 0 0;
+  font-family: serif;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 
 .p-profile__img {

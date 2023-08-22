@@ -22,10 +22,15 @@
                     <dd class="c-text__profile">
                         <dl>
                             <dt class="personal">
-                                名前　生年月日
+                                石塚 良和
+                                <span>
+                                    1985年 茨城県生まれ
+                                </span>
                             </dt>
                             <dd class="introduction">
-                                プロフィールが入ります
+                            IT業界への転職を志し、毎日学習に励んでいます。 WordPressが得意です。
+                            案件実績あり。 WordPressプラグイン開発実績あり。  
+                            <br>エンジニアリングスクールRaiseTech受講生 (WordPressコース)
                             </dd>
                         </dl>
                     </dd>
