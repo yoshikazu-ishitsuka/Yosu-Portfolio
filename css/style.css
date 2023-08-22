@@ -67,7 +67,12 @@ body {
 
 .c-title__profile {
   position: relative;
-  font-size: 24px;
+  font-size: 16px;
+}
+@media (min-width: 521px) {
+  .c-title__profile {
+    font-size: 24px;
+  }
 }
 
 .p-content {
@@ -141,19 +146,31 @@ body {
 }
 .p-profile__inner .personal {
   text-align: left;
+  margin-top: 3rem;
 }
 .p-profile__inner .personal span {
   font-family: serif;
   font-size: 14px;
   font-weight: 100;
   display: inline-block;
-  margin-top: 4rem;
+  margin-top: 1rem;
+}
+@media (min-width: 521px) {
+  .p-profile__inner .personal span {
+    margin-top: 4rem;
+  }
 }
 .p-profile__inner .introduction {
   margin: 2rem 1.5rem 0 0;
   font-family: serif;
+  font-size: 10px;
   letter-spacing: 0.05em;
   line-height: 1.5;
+}
+@media (min-width: 521px) {
+  .p-profile__inner .introduction {
+    font-size: 16px;
+  }
 }
 
 .p-profile__img {
@@ -162,6 +179,12 @@ body {
 }
 .p-profile__img img {
   width: 100%;
+  height: 50%;
+}
+@media (min-width: 521px) {
+  .p-profile__img img {
+    height: inherit;
+  }
 }
 
 .p-visual__main__img {

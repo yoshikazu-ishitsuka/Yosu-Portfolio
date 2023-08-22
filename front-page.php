@@ -22,7 +22,7 @@
                     <dd class="c-text__profile">
                         <dl>
                             <dt class="personal">
-                                石塚 良和
+                                石塚 良和&nbsp;&nbsp;
                                 <span>
                                     1985年 茨城県生まれ
                                 </span>
