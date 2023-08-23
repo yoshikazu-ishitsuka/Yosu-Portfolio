@@ -7,8 +7,12 @@
   justify-content: space-evenly;
 }
 
+.p-profile__outer {
+  width: 50%;  
+}
+
 .p-profile__inner {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,17 +38,23 @@
   }
 
     .personal {
-      text-align: left;
+      font-weight: 500;
+      text-align: center;
       margin-top: 3rem;
+      
+      @media ( min-width: 375px ) {
+        text-align: left;
+      }
 
       span {
         font-family: serif;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 100;
         display: inline-block;
         margin-top: 1rem;
 
         @include g.breakpoint( tablet ) {
+          font-size: 14px;
           margin-top: 4rem;
         }
       }
@@ -61,6 +71,21 @@
         font-size: 16px;
       }
     }
+}
+
+.p-profile__sns {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+
+  @include g.breakpoint( tablet ) {
+    gap: 20px;
+  }
+
+  @include g.breakpoint( pc ) {
+    gap: 30px;
+  }
 }
 
 .p-profile__img {
