@@ -11,19 +11,25 @@
 
         <article class="p-content">
 
+            <!-- お知らせ -->
             <section class="p-news">
 
             </section>
+            <!-- お知らせ -->
+
+            <!-- プロフィール -->
             <section class="p-profile">
                 <div class="p-profile__outer">
                     <dl class="p-profile__inner">
-                        <dt class="c-title__profile c-text__underline c-text__undertext">
-                            プロフィール
+                        <dt class="c-title__headline c-text__underline c-text__undertext">
+                            PROFILE
                         </dt>
                         <dd class="c-text__profile">
                             <dl>
                                 <dt class="personal">
-                                    石塚 良和&nbsp;&nbsp;
+                                    <span class="name">
+                                        石塚 良和&nbsp;&nbsp;
+                                    </span>
                                     <span>
                                         1985年 茨城県生まれ
                                     </span>
@@ -70,8 +76,73 @@
                     <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.png' )); ?>" alt="">
                 </div>
             </section>
-        </article>
+            <!-- プロフィール -->
 
-        
+            <!-- スキル -->
+            <section class="p-skill">
+                <div class="p-skill__title">
+                    <h3 class="c-title__headline c-text__underline c-text__undertext">
+                        SKILL
+                    </h3>
+                </div>
+                <div class="p-skill__outer">
+                    <ul class="p-skill__inner">
+                        <li class="p-skill__list">
+                            <i class="fa-brands fa-html5 fa-6x html5"></i>
+                            <p class="c-text__skill">
+                                HTMLの基本的なタグや構文を習得し、シンプルなWebページを作成することができます。
+                            <br>
+                                エディタはVSCodeを使用しています。
+                            </p>
+                        </li>
+                        <li class="p-skill__list">
+                            <i class="fa-brands fa-css3-alt fa-6x css3"></i>
+                            <p class="c-text__skill">
+                                セレクター、プロパティ、値などの基本的なコンセプトを理解し、それを活用してシンプルなWebページのデザインやスタイリングを行うことができます。
+                            </p>
+                        </li>
+                        <li class="p-skill__list">
+                            <i class="fa-brands fa-sass fa-6x sass"></i>
+                            <p class="c-text__skill">
+                                Sassの学習に取り組み、変数の利用やネスト、mixinといったSass固有の機能を理解し、これによってスタイルシートの記述をより効率的かつ読みやすくしています。
+                            <br>
+                                また、CSS設計も学習し、FLOCSSの記述も出来ます。
+                            <br>
+                                このサイトもFLOCSSで構成しています。
+                            </p>
+                        </li>
+                        <li class="p-skill__list">
+                            <i class="fa-brands fa-square-js fa-6x js"></i>
+                            <p class="c-text__skill">
+                                jQueryのセレクター、イベントハンドリング、アニメーション効果などを理解し、Webページに動的な要素やエフェクトを追加することができます。
+                            <br>
+                                また、JavaScriptの基本的なイベント発火、DOM操作などが出来ます。
+                            </p>
+                        </li>
+                        <li class="p-skill__list">
+                            <i class="fa-brands fa-wordpress fa-6x wp"></i>
+                            <p class="c-text__skill">
+                                デザインカンプからの静的コーディングをした後にWordPress化をしてレンタルサーバーにデプロイまで出来ます。
+                            <br>
+                                また、カスタムフィールド、カスタム投稿、カスタムタクソノミー（カテゴリー、タグ）、OGP設定・実装、ブラウザチェック、テーマチェック、関連記事表示機能（プラグイン有り、無し両方の経験有り。）Contact Form 7を使用したお問い合わせページの作成。
+                            <br>
+                                上記が実装した経験があります。
+                            </p>
+                        </li>
+                        <li class="p-skill__list">
+                            <i class="fa-brands fa-figma fa-6x figma"></i>
+                            <p class="c-text__skill">
+                                figma自体は使えませんが、デザインカンプの見方、各プロパティの確認や画像の書き出しが出来ます。
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </section>
+            <!-- スキル -->
+
+
+        </article>
     </main>
 <?php get_footer(); ?>

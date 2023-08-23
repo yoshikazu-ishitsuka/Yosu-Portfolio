@@ -13,12 +13,14 @@
   }
 }
 
-.c-title__profile {
+.c-title__headline {
   position: relative;
+  font-weight: 700;
+  font-family: serif;
   font-size: 16px;
 
   @include g.breakpoint( tablet ) {
-    font-size: 24px;
+    font-size: 60px;
   }
 }
 

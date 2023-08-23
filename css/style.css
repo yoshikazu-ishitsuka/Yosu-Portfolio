@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* foundation */
 body {
   width: 100%;
@@ -55,11 +56,27 @@ body {
   font-family: serif;
 }
 
+.c-text__undertext::before {
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: serif;
+}
+
 .c-text__underline::after {
   content: "";
   display: inline-block;
   background-color: #000;
   position: absolute;
+}
+
+.c-text__skill {
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  text-align: justify;
+  margin-top: 10%;
 }
 
 .c-title {
@@ -77,13 +94,15 @@ body {
   }
 }
 
-.c-title__profile {
+.c-title__headline {
   position: relative;
+  font-weight: 700;
+  font-family: serif;
   font-size: 16px;
 }
 @media (min-width: 521px) {
-  .c-title__profile {
-    font-size: 24px;
+  .c-title__headline {
+    font-size: 60px;
   }
 }
 
@@ -94,7 +113,7 @@ body {
 
 .p-content {
   width: 100%;
-  height: 1500px;
+  height: auto;
   padding: 0 3%;
 }
 
@@ -148,22 +167,17 @@ body {
   align-items: center;
 }
 .p-profile__inner .c-text__underline::after {
-  width: 80px;
+  width: 110px;
   height: 1px;
   bottom: -5px;
-  left: calc(50% - 40px);
+  left: calc(50% - 55px);
 }
 .p-profile__inner .c-text__undertext::before {
-  content: "profile";
-  display: inline-block;
-  position: absolute;
-  font-size: 14px;
-  font-weight: lighter;
-  font-family: serif;
+  content: "プロフィール";
   width: 110px;
   height: 1px;
   bottom: -10px;
-  left: calc(50% - 25px);
+  left: calc(50% - 40px);
 }
 .p-profile__inner .personal {
   font-weight: 500;
@@ -173,6 +187,19 @@ body {
 @media (min-width: 375px) {
   .p-profile__inner .personal {
     text-align: left;
+  }
+  .p-profile__inner .personal .name {
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .p-profile__inner .personal .name::before {
+    content: "いしつか よしかず";
+    position: absolute;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    top: -12px;
+    left: 1px;
   }
 }
 .p-profile__inner .personal span {
@@ -230,6 +257,165 @@ body {
   .p-profile__img img {
     height: inherit;
   }
+}
+
+.p-skill {
+  margin-top: 20%;
+  width: 100%;
+  height: auto;
+}
+.p-skill .c-text__undertext::before {
+  content: "スキル";
+  width: 110px;
+  height: 1px;
+  bottom: -10px;
+  left: calc(50% - 25px);
+}
+.p-skill .c-text__underline::after {
+  width: 80px;
+  height: 1px;
+  bottom: -5px;
+  left: calc(50% - 40px);
+}
+
+.p-skill__title {
+  display: flex;
+  justify-content: center;
+}
+
+.p-skill__outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.p-skill__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  padding: 0 100px;
+  margin-top: 3rem;
+}
+.p-skill__inner::after {
+  content: "";
+  display: block;
+  width: 250px;
+}
+
+.p-skill__list {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-skill__list .html5 {
+  position: relative;
+}
+.p-skill__list .fa-html5::before {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  color: #FD5722;
+}
+.p-skill__list .fa-html5::after {
+  content: "HTML5";
+  position: absolute;
+  top: -17px;
+  left: 4px;
+  font-size: 20px;
+  font-style: normal;
+}
+.p-skill__list .css3 {
+  position: relative;
+}
+.p-skill__list .fa-css3-alt::before {
+  content: "\f38b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  color: #239AF8;
+}
+.p-skill__list .fa-css3-alt::after {
+  content: "CSS3";
+  position: absolute;
+  top: -17px;
+  left: 12px;
+  font-size: 20px;
+  font-style: normal;
+}
+.p-skill__list .sass {
+  position: relative;
+}
+.p-skill__list .fa-sass::before {
+  content: "\f41e";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  color: #CB6699;
+}
+.p-skill__list .fa-sass::after {
+  content: "Sass";
+  position: absolute;
+  top: -31px;
+  left: 29px;
+  font-size: 24px;
+  font-style: normal;
+}
+.p-skill__list .js {
+  position: relative;
+}
+.p-skill__list .fa-square-js::before {
+  content: "\f3b9";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  color: #F5DE1B;
+}
+.p-skill__list .fa-square-js::after {
+  content: "JavaScript jQuery";
+  position: absolute;
+  top: -46px;
+  left: 4px;
+  font-size: 20px;
+  font-style: normal;
+}
+.p-skill__list .wp {
+  position: relative;
+}
+.p-skill__list .fa-wordpress::before {
+  content: "\f19a";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  color: #20759A;
+}
+.p-skill__list .fa-wordpress::after {
+  content: "WordPress";
+  position: absolute;
+  top: -33px;
+  left: -10px;
+  font-size: 24px;
+  font-style: normal;
+}
+.p-skill__list .figma {
+  position: relative;
+}
+.p-skill__list .fa-figma::before {
+  content: "\f799";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-style: normal;
+  color: #303030;
+}
+.p-skill__list .fa-figma::after {
+  content: "Figma";
+  position: absolute;
+  top: -33px;
+  left: 4px;
+  font-size: 24px;
+  font-style: normal;
 }
 
 .p-visual__main__img {

@@ -1,0 +1,188 @@
+@use "../../foundation/global" as g;
+
+.p-skill {
+  margin-top: 20%;
+  width: 100%;
+  height: auto;
+
+  .c-text__undertext::before {
+    content: "スキル";
+    width: 110px;
+    height: 1px;
+    bottom: -10px;
+    left: calc(50% - 25px)
+  }
+  
+  .c-text__underline::after {
+    width: 80px;
+    height: 1px;
+    bottom: -5px;
+    left: calc(50% - 40px)
+  }
+}
+
+.p-skill__title {
+  display: flex;
+  justify-content: center;
+}
+
+.p-skill__outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.p-skill__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  padding: 0 100px;
+  margin-top: 3rem;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 250px; // 下と統一すること
+  }
+}
+
+.p-skill__list {
+  width: 250px; // 上と統一すること
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // HTML5 //
+  .html5 {
+    position: relative;
+  }
+
+  .fa-html5::before {
+    content: '\f13b';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #FD5722;
+  }
+
+  .fa-html5::after {
+    content: 'HTML5';
+    position: absolute;
+    top: -17px;
+    left: 4px;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  // CSS3 //
+  .css3 {
+    position: relative;
+  }  
+
+  .fa-css3-alt::before {
+    content: '\f38b';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #239AF8;
+  }
+
+  .fa-css3-alt::after {
+    content: 'CSS3';
+    position: absolute;
+    top: -17px;
+    left: 12px;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  // Sass //
+  .sass {
+    position: relative;
+  }
+
+  .fa-sass::before {
+    content: '\f41e';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #CB6699;
+  }
+
+  .fa-sass::after {
+    content: 'Sass';
+    position: absolute;
+    top: -31px;
+    left: 29px;
+    font-size: 24px;
+    font-style: normal;
+  }
+
+  // JS //
+  .js {
+    position: relative;
+  }
+
+  .fa-square-js::before {
+    content: '\f3b9';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #F5DE1B;
+  }
+
+  .fa-square-js::after {
+    content: 'JavaScript jQuery';
+    position: absolute;
+    top: -46px;
+    left: 4px;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  // WordPress //
+  .wp {
+    position: relative;
+  }
+
+  .fa-wordpress::before {
+    content: '\f19a';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #20759A;
+  }
+
+  .fa-wordpress::after {
+    content: 'WordPress';
+    position: absolute;
+    top: -33px;
+    left: -10px;
+    font-size: 24px;
+    font-style: normal;
+  }
+
+  // Figma //
+  .figma {
+    position: relative;
+  }
+
+  .fa-figma::before {
+    content: '\f799';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #303030;
+  }
+
+  .fa-figma::after {
+    content: 'Figma';
+    position: absolute;
+    top: -33px;
+    left: 4px;
+    font-size: 24px;
+    font-style: normal;
+  }
+
+}
