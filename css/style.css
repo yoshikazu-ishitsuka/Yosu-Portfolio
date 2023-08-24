@@ -294,8 +294,12 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 150px;
-  padding: 0 100px;
   margin-top: 3rem;
+}
+@media (min-width: 521px) {
+  .p-skill__inner {
+    padding: 0 100px;
+  }
 }
 .p-skill__inner::after {
   content: "";

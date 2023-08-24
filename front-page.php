@@ -18,7 +18,7 @@
             <!-- お知らせ -->
 
             <!-- プロフィール -->
-            <section class="p-profile">
+            <section class="p-profile" id="profile">
                 <div class="p-profile__outer">
                     <dl class="p-profile__inner">
                         <dt class="c-title__headline c-text__underline c-text__undertext">
@@ -35,41 +35,42 @@
                                     </span>
                                 </dt>
                                 <dd class="introduction">
-                                IT業界への転職を志し、毎日学習に励んでいます。 WordPressが得意です。
+                                IT業界への転職を志し、毎日学習に励んでいます。 
+                                <br>WordPressが得意です。
                                 案件実績あり。
                                 <br> WordPressプラグイン開発実績あり。  
                                 <br>エンジニアリングスクールRaiseTech受講生 
                                 <br>(WordPressコース 2022.04月生)
                                 </dd>
                             </dl>
+                            <!-- SNSへのリンク -->
+                            <p class="c-title__sns">
+                                「各種リンク」
+                            </p>
+                            <ul class="p-profile__sns">
+                                <li class="p-profile__sns__list">
+                                    <a href="//twitter.com/it_begi_yos815" target="_blank">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/t_logo.png' )); ?>" alt="Twitterアイコン">
+                                    </a>
+                                </li>
+                                <li class="p-profile__sns__list">
+                                    <a href="//github.com/yoshikazu-ishitsuka" target="_blank">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/g_logo.png' )); ?>" alt="アイコン">
+                                    </a>
+                                </li>
+                                <li class="p-profile__sns__list">
+                                    <a href="//qiita.com/yosyosyoyoyo" target="_blank">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/q_logo.png' )); ?>" alt="アイコン">
+                                    </a>
+                                </li>
+                                <li class="p-profile__sns__list">
+                                    <a href="//app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQM1ITMgoTd" target="_blank">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.png' )); ?>" alt="アイコン">
+                                    </a>
+                                </li>
+                            </ul>
                         </dd>
                     </dl>
-
-                    <p class="c-title__sns">
-                        「各種リンク」
-                    </p>
-                    <ul class="p-profile__sns">
-                        <li class="p-profile__sns__list">
-                            <a href="//twitter.com/it_begi_yos815" target="_blank">
-                                <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/t_logo.png' )); ?>" alt="Twitterアイコン">
-                            </a>
-                        </li>
-                        <li class="p-profile__sns__list">
-                            <a href="//github.com/yoshikazu-ishitsuka" target="_blank">
-                                <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/g_logo.png' )); ?>" alt="アイコン">
-                            </a>
-                        </li>
-                        <li class="p-profile__sns__list">
-                            <a href="//qiita.com/yosyosyoyoyo" target="_blank">
-                                <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/q_logo.png' )); ?>" alt="アイコン">
-                            </a>
-                        </li>
-                        <li class="p-profile__sns__list">
-                            <a href="//app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQM1ITMgoTd" target="_blank">
-                                <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.png' )); ?>" alt="アイコン">
-                            </a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="p-profile__img">
@@ -79,7 +80,7 @@
             <!-- プロフィール -->
 
             <!-- スキル -->
-            <section class="p-skill">
+            <section class="p-skill" id="skill">
                 <div class="p-skill__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         SKILL
