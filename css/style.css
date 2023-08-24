@@ -10,6 +10,7 @@ body {
 .l-footer {
   width: 100vw;
   height: 100px;
+  margin-top: 20%;
   background-color: beige;
 }
 
@@ -456,6 +457,10 @@ body {
   to {
     background-position: right;
   }
+}
+.p-works__title {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

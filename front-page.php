@@ -15,7 +15,7 @@
             <section class="p-news">
 
             </section>
-            <!-- お知らせ -->
+            <!-- お知らせここまで -->
 
             <!-- プロフィール -->
             <section class="p-profile" id="profile">
@@ -43,6 +43,7 @@
                                 <br>(WordPressコース 2022.04月生)
                                 </dd>
                             </dl>
+
                             <!-- SNSへのリンク -->
                             <p class="c-title__sns">
                                 「各種リンク」
@@ -77,7 +78,7 @@
                     <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.png' )); ?>" alt="">
                 </div>
             </section>
-            <!-- プロフィール -->
+            <!-- プロフィールここまで -->
 
             <!-- スキル -->
             <section class="p-skill" id="skill">
@@ -141,7 +142,18 @@
                 </div>
 
             </section>
-            <!-- スキル -->
+            <!-- スキルここまで -->
+
+            <!-- 制作実績 -->
+            <section class="p-works" id="works">
+                <div class="p-works__title">
+                    <h3 class="c-title__headline c-text__underline c-text__undertext">
+                        WORKS
+                    </h3>
+                </div>
+
+            <!-- 制作実績ここまで -->
+            </section>
 
 
         </article>
