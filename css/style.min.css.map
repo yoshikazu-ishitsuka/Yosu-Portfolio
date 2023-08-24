@@ -1,1 +1,1 @@
-{"version":3,"sources":["../scss/style.scss","../scss/layout/_footer.scss","$stdin","style.css"],"names":[],"mappings":"AAUA,aCVA,YAAA,iBCSgC,CDThC,SCS2C,CDT3C,MCSmD,CDTnD,WCSgE,CDThE,WCS6E,CACvE,iBAAiB,CAAE,SAAS,CAAE,UDRlC,YAAA,IACA,QAAA,MEUA,QAAA,IACA,cAAA,IFRF,cAAA,IAAA,MAAA,KACE,QAAA"}
+{"version":3,"sources":["../scss/style.scss","../scss/layout/_footer.scss","$stdin","style.css"],"names":[],"mappings":"AAUA,aCVA,YAAA,iBCSgC,CDThC,SCS2C,CDT3C,MCSmD,CDTnD,WCSgE,CDThE,WCS6E,CACvE,iBAAiB,CAAE,SAAS,CAAE,UDRlC,YAAA,IACA,QAAA,MACA,QAAA,IEUA,cAAA,IACA,cAAA,IAAA,MAAA,KFRF,QAAA"}

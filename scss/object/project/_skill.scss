@@ -1,23 +1,33 @@
 @use "../../foundation/global" as g;
 
 .p-skill {
-  margin-top: 20%;
+  margin-top: 90%;
   width: 100%;
   height: auto;
+
+  @media ( min-width: 600px ) {
+    margin-top: 20%;
+  }
 
   .c-text__undertext::before {
     content: "スキル";
     width: 110px;
     height: 1px;
     bottom: -10px;
-    left: calc(50% - 25px)
+    left: calc(50% - 25px);
   }
   
   .c-text__underline::after {
-    width: 80px;
+    width: 60px;
     height: 1px;
     bottom: -5px;
-    left: calc(50% - 40px)
+    left: calc(50% - 30px);
+    
+    @include g.breakpoint( tablet ) {
+      width: 80px;
+      left: calc(50% - 40px);
+    }
+    
   }
 }
 
@@ -59,6 +69,11 @@
   // HTML5 //
   .html5 {
     position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
   }
 
   .fa-html5::before {
@@ -73,14 +88,23 @@
     content: 'HTML5';
     position: absolute;
     top: -17px;
-    left: 4px;
+    left: -7px;
     font-size: 20px;
     font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 4px;
+    }
   }
 
   // CSS3 //
   .css3 {
     position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
   }  
 
   .fa-css3-alt::before {
@@ -95,14 +119,23 @@
     content: 'CSS3';
     position: absolute;
     top: -17px;
-    left: 12px;
+    left: 0;
     font-size: 20px;
     font-style: normal;
+    
+    @include g.breakpoint( tablet ) {
+      left: 12px;
+    }
   }
 
   // Sass //
   .sass {
     position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
   }
 
   .fa-sass::before {
@@ -117,14 +150,23 @@
     content: 'Sass';
     position: absolute;
     top: -31px;
-    left: 29px;
+    left: 11px;
     font-size: 24px;
     font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 29px;
+    }
   }
 
   // JS //
   .js {
     position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
   }
 
   .fa-square-js::before {
@@ -139,14 +181,23 @@
     content: 'JavaScript jQuery';
     position: absolute;
     top: -46px;
-    left: 4px;
+    left: -8px;
     font-size: 20px;
     font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 4px;
+    }
   }
 
   // WordPress //
   .wp {
     position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
   }
 
   .fa-wordpress::before {
@@ -161,14 +212,23 @@
     content: 'WordPress';
     position: absolute;
     top: -33px;
-    left: -10px;
+    left: -25px;
     font-size: 24px;
     font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: -10px;
+    }
   }
 
   // Figma //
   .figma {
     position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
   }
 
   .fa-figma::before {
@@ -183,9 +243,13 @@
     content: 'Figma';
     position: absolute;
     top: -33px;
-    left: 4px;
+    left: -8px;
     font-size: 24px;
     font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 4px;
+    }
   }
 
 }

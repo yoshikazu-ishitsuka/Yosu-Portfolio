@@ -90,7 +90,7 @@
                 <div class="p-skill__outer">
                     <ul class="p-skill__inner">
                         <li class="p-skill__list">
-                            <i class="fa-brands fa-html5 fa-6x html5"></i>
+                            <i class="fa-brands fa-html5 html5"></i>
                             <p class="c-text__skill">
                                 HTMLの基本的なタグや構文を習得し、シンプルなWebページを作成することができます。
                             <br>

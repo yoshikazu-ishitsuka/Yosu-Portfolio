@@ -4,7 +4,14 @@
   width: 100%;
   height: 500px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center ;
+  
+  @media ( min-width: 600px ) {
+    justify-content: space-evenly;
+    flex-direction: inherit;
+    align-items: center;
+  }
 }
 
 .p-profile__outer {
@@ -21,7 +28,7 @@
     width: 110px;
     height: 1px;
     bottom: -5px;
-    left: calc(50% - 55px)
+    left: calc(50% - 55px);
   }
 
   .c-text__undertext::before {
@@ -29,7 +36,7 @@
     width: 110px;
     height: 1px;
     bottom: -10px;
-    left: calc(50% - 40px)
+    left: calc(50% - 40px);
   }
 
     .personal {
@@ -39,22 +46,42 @@
       
       @media ( min-width: 375px ) {
         text-align: left;
+      }
 
         .name {
           position: relative;
           font-weight: bold;
-          font-size: 20px;
+          font-size: 18px;
+          
+          @include g.breakpoint( tablet ) {
+            font-size: 20px;
+          }
+
+          @media ( min-width: 1200px ) {
+            font-size: 30px;
+          }
 
           &::before {
             content: 'いしつか よしかず';
             position: absolute;
             font-size: 10px;
-            letter-spacing: 0.04em;
             top: -12px;
-            left: 1px;
+            left: 0;
+            
+            @include g.breakpoint( tablet ) {
+              left: 1px;
+              letter-spacing: 0.04em;
+            }
+
+            @media ( min-width: 1200px ) {
+              font-size: 14px;
+              letter-spacing: 0.1em;
+              top: -17px;
+              left: 3px;
+            }
+
           }
         }
-      }
 
       span {
         font-family: serif;
@@ -67,18 +94,34 @@
           font-size: 14px;
           margin-top: 4rem;
         }
+
+        @include g.breakpoint( pc ) {
+          font-size: 18px;
+        }
+
       }
     }
 
     .introduction {
-      margin: 2rem 1.5rem 0 0;
       font-family: serif;
       font-size: 10px;
       letter-spacing: 0.05em;
       line-height: 1.5;
-
+      margin-top: 1rem;
+      text-align: center;
+      width: max-content;
+      
       @include g.breakpoint( tablet ) {
-        font-size: 16px;
+        font-size: 12px;
+        margin: 2rem 1.5rem 0 0;
+      }
+      
+      @include g.breakpoint( pc ) {
+        font-size: 18px;
+      }
+      
+      @media ( min-width: 1200px ) {
+        font-size: 24px;
       }
     }
 }
@@ -86,11 +129,12 @@
 .p-profile__sns {
   margin-top: 1rem;
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   gap: 10px;
-
-  @include g.breakpoint( tablet ) {
+  
+  @media ( min-width: 600px ) {
     gap: 20px;
+    justify-content: left;
   }
 
   @include g.breakpoint( pc ) {
@@ -99,15 +143,21 @@
 }
 
 .p-profile__img {
-  width: 50%;
-  height: 100%;
+  height: auto;
+  width: auto;
+  margin-top: 3rem;
+  
+  @media ( min-width: 600px ) {
+    width: 50%;
+    height: 100%;
+  }
 
   img {
     width: 100%;
-    height: 50%;
-
-    @include g.breakpoint( tablet ) {
-        height: inherit;
+    
+    @media ( min-width: 600px ) {
+      // height: 50%;
+      height: inherit;
     }
   }
 }

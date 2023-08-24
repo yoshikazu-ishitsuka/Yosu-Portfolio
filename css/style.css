@@ -73,11 +73,16 @@ body {
 }
 
 .c-text__skill {
-  font-size: 24px;
+  font-size: 16px;
   letter-spacing: 0.04em;
   line-height: 1.3;
   text-align: justify;
   margin-top: 10%;
+}
+@media (min-width: 521px) {
+  .c-text__skill {
+    font-size: 24px;
+  }
 }
 
 .c-title {
@@ -99,9 +104,9 @@ body {
   position: relative;
   font-weight: 700;
   font-family: serif;
-  font-size: 16px;
+  font-size: 30px;
 }
-@media (min-width: 521px) {
+@media (min-width: 961px) {
   .c-title__headline {
     font-size: 60px;
   }
@@ -110,6 +115,22 @@ body {
 .c-title__sns {
   font-size: 16px;
   margin-top: 2rem;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .c-title__sns {
+    text-align: left;
+  }
+}
+@media (min-width: 961px) {
+  .c-title__sns {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-title__sns {
+    font-size: 30px;
+  }
 }
 
 .p-content {
@@ -154,7 +175,15 @@ body {
   width: 100%;
   height: 500px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  .p-profile {
+    justify-content: space-evenly;
+    flex-direction: inherit;
+    align-items: center;
+  }
 }
 
 .p-profile__outer {
@@ -189,18 +218,41 @@ body {
   .p-profile__inner .personal {
     text-align: left;
   }
+}
+.p-profile__inner .personal .name {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media (min-width: 521px) {
   .p-profile__inner .personal .name {
-    position: relative;
-    font-weight: bold;
     font-size: 20px;
   }
+}
+@media (min-width: 1200px) {
+  .p-profile__inner .personal .name {
+    font-size: 30px;
+  }
+}
+.p-profile__inner .personal .name::before {
+  content: "いしつか よしかず";
+  position: absolute;
+  font-size: 10px;
+  top: -12px;
+  left: 0;
+}
+@media (min-width: 521px) {
   .p-profile__inner .personal .name::before {
-    content: "いしつか よしかず";
-    position: absolute;
-    font-size: 10px;
-    letter-spacing: 0.04em;
-    top: -12px;
     left: 1px;
+    letter-spacing: 0.04em;
+  }
+}
+@media (min-width: 1200px) {
+  .p-profile__inner .personal .name::before {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    top: -17px;
+    left: 3px;
   }
 }
 .p-profile__inner .personal span {
@@ -216,28 +268,47 @@ body {
     margin-top: 4rem;
   }
 }
+@media (min-width: 961px) {
+  .p-profile__inner .personal span {
+    font-size: 18px;
+  }
+}
 .p-profile__inner .introduction {
-  margin: 2rem 1.5rem 0 0;
   font-family: serif;
   font-size: 10px;
   letter-spacing: 0.05em;
   line-height: 1.5;
+  margin-top: 1rem;
+  text-align: center;
+  width: max-content;
 }
 @media (min-width: 521px) {
   .p-profile__inner .introduction {
-    font-size: 16px;
+    font-size: 12px;
+    margin: 2rem 1.5rem 0 0;
+  }
+}
+@media (min-width: 961px) {
+  .p-profile__inner .introduction {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .p-profile__inner .introduction {
+    font-size: 24px;
   }
 }
 
 .p-profile__sns {
   margin-top: 1rem;
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   gap: 10px;
 }
-@media (min-width: 521px) {
+@media (min-width: 600px) {
   .p-profile__sns {
     gap: 20px;
+    justify-content: left;
   }
 }
 @media (min-width: 961px) {
@@ -247,23 +318,34 @@ body {
 }
 
 .p-profile__img {
-  width: 50%;
-  height: 100%;
+  height: auto;
+  width: auto;
+  margin-top: 3rem;
+}
+@media (min-width: 600px) {
+  .p-profile__img {
+    width: 50%;
+    height: 100%;
+  }
 }
 .p-profile__img img {
   width: 100%;
-  height: 50%;
 }
-@media (min-width: 521px) {
+@media (min-width: 600px) {
   .p-profile__img img {
     height: inherit;
   }
 }
 
 .p-skill {
-  margin-top: 20%;
+  margin-top: 90%;
   width: 100%;
   height: auto;
+}
+@media (min-width: 600px) {
+  .p-skill {
+    margin-top: 20%;
+  }
 }
 .p-skill .c-text__undertext::before {
   content: "スキル";
@@ -273,10 +355,16 @@ body {
   left: calc(50% - 25px);
 }
 .p-skill .c-text__underline::after {
-  width: 80px;
+  width: 60px;
   height: 1px;
   bottom: -5px;
-  left: calc(50% - 40px);
+  left: calc(50% - 30px);
+}
+@media (min-width: 521px) {
+  .p-skill .c-text__underline::after {
+    width: 80px;
+    left: calc(50% - 40px);
+  }
 }
 
 .p-skill__title {
@@ -316,6 +404,12 @@ body {
 }
 .p-skill__list .html5 {
   position: relative;
+  font-size: 4em;
+}
+@media (min-width: 521px) {
+  .p-skill__list .html5 {
+    font-size: 6em;
+  }
 }
 .p-skill__list .fa-html5::before {
   content: "\f13b";
@@ -328,12 +422,23 @@ body {
   content: "HTML5";
   position: absolute;
   top: -17px;
-  left: 4px;
+  left: -7px;
   font-size: 20px;
   font-style: normal;
 }
+@media (min-width: 521px) {
+  .p-skill__list .fa-html5::after {
+    left: 4px;
+  }
+}
 .p-skill__list .css3 {
   position: relative;
+  font-size: 4em;
+}
+@media (min-width: 521px) {
+  .p-skill__list .css3 {
+    font-size: 6em;
+  }
 }
 .p-skill__list .fa-css3-alt::before {
   content: "\f38b";
@@ -346,12 +451,23 @@ body {
   content: "CSS3";
   position: absolute;
   top: -17px;
-  left: 12px;
+  left: 0;
   font-size: 20px;
   font-style: normal;
 }
+@media (min-width: 521px) {
+  .p-skill__list .fa-css3-alt::after {
+    left: 12px;
+  }
+}
 .p-skill__list .sass {
   position: relative;
+  font-size: 4em;
+}
+@media (min-width: 521px) {
+  .p-skill__list .sass {
+    font-size: 6em;
+  }
 }
 .p-skill__list .fa-sass::before {
   content: "\f41e";
@@ -364,12 +480,23 @@ body {
   content: "Sass";
   position: absolute;
   top: -31px;
-  left: 29px;
+  left: 11px;
   font-size: 24px;
   font-style: normal;
 }
+@media (min-width: 521px) {
+  .p-skill__list .fa-sass::after {
+    left: 29px;
+  }
+}
 .p-skill__list .js {
   position: relative;
+  font-size: 4em;
+}
+@media (min-width: 521px) {
+  .p-skill__list .js {
+    font-size: 6em;
+  }
 }
 .p-skill__list .fa-square-js::before {
   content: "\f3b9";
@@ -382,12 +509,23 @@ body {
   content: "JavaScript jQuery";
   position: absolute;
   top: -46px;
-  left: 4px;
+  left: -8px;
   font-size: 20px;
   font-style: normal;
 }
+@media (min-width: 521px) {
+  .p-skill__list .fa-square-js::after {
+    left: 4px;
+  }
+}
 .p-skill__list .wp {
   position: relative;
+  font-size: 4em;
+}
+@media (min-width: 521px) {
+  .p-skill__list .wp {
+    font-size: 6em;
+  }
 }
 .p-skill__list .fa-wordpress::before {
   content: "\f19a";
@@ -400,12 +538,23 @@ body {
   content: "WordPress";
   position: absolute;
   top: -33px;
-  left: -10px;
+  left: -25px;
   font-size: 24px;
   font-style: normal;
 }
+@media (min-width: 521px) {
+  .p-skill__list .fa-wordpress::after {
+    left: -10px;
+  }
+}
 .p-skill__list .figma {
   position: relative;
+  font-size: 4em;
+}
+@media (min-width: 521px) {
+  .p-skill__list .figma {
+    font-size: 6em;
+  }
 }
 .p-skill__list .fa-figma::before {
   content: "\f799";
@@ -418,9 +567,14 @@ body {
   content: "Figma";
   position: absolute;
   top: -33px;
-  left: 4px;
+  left: -8px;
   font-size: 24px;
   font-style: normal;
+}
+@media (min-width: 521px) {
+  .p-skill__list .fa-figma::after {
+    left: 4px;
+  }
 }
 
 .p-visual__main__img {

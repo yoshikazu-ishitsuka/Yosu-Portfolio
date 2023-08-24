@@ -17,9 +17,10 @@
   position: relative;
   font-weight: 700;
   font-family: serif;
-  font-size: 16px;
+  font-size: 30px;
 
-  @include g.breakpoint( tablet ) {
+
+  @include g.breakpoint( pc ) {
     font-size: 60px;
   }
 }
@@ -27,4 +28,18 @@
 .c-title__sns {
   font-size: 16px;
   margin-top: 2rem;
+  text-align: center;
+  
+  @media ( min-width: 600px ) {
+    text-align: left;
+  }
+  
+  @include g.breakpoint( pc ) {
+    font-size: 20px;
+  }
+
+  @media ( min-width: 1200px ) {
+    font-size: 30px;
+  }
+
 }
