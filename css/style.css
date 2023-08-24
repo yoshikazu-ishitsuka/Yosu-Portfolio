@@ -612,6 +612,30 @@ body {
     background-position: right;
   }
 }
+.p-works {
+  width: 100%;
+  height: auto;
+}
+.p-works .c-text__undertext::before {
+  content: "制作実績";
+  width: 110px;
+  height: 1px;
+  bottom: -10px;
+  left: calc(50% - 30px);
+}
+.p-works .c-text__underline::after {
+  width: 60px;
+  height: 1px;
+  bottom: -5px;
+  left: calc(50% - 30px);
+}
+@media (min-width: 521px) {
+  .p-works .c-text__underline::after {
+    width: 80px;
+    left: calc(50% - 40px);
+  }
+}
+
 .p-works__title {
   display: flex;
   justify-content: center;
