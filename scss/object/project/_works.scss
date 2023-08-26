@@ -29,4 +29,19 @@
 .p-works__title {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.p-works__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.p-works__inner__title {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 25px;
+  font-family: monospace;
 }

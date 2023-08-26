@@ -19,10 +19,12 @@
 
 // component
 @use "object/component/icon";
+@use "object/component/image";
 @use "object/component/text";
 @use "object/component/title";
 
 // project
+@use "object/project/card";
 @use "object/project/content";
 @use "object/project/navigation";
 @use "object/project/news";

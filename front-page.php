@@ -152,8 +152,10 @@
                     </h3>
                 </div>
 
-            <!-- 制作実績ここまで -->
+            <?php get_template_part( "components/card_works" ); ?>
+
             </section>
+            <!-- 制作実績ここまで -->
 
 
         </article>

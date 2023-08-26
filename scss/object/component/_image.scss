@@ -1,0 +1,7 @@
+@use "../../foundation/global" as g;
+
+.c-image__mask {
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+}
