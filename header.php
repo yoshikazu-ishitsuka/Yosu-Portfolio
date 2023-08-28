@@ -8,6 +8,8 @@
 </head>
 
 <body class="home" <?php body_class(); ?>>
+<article class="wrapper u-background__overlay">
+
 <?php wp_body_open(); ?>
     <header class="l-header">
         <div class="l-header__inner">
@@ -17,6 +19,9 @@
                 </a>
             </h1>
             <nav class="p-navigation">
+                <button class="p-hamburger js-hamburger">
+					<span>メニュー展開ボタン</span>
+				</button>
                 <ul class="p-navigation__menu">
                     <?php
                         wp_nav_menu( array (

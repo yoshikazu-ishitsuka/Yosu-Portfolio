@@ -18,6 +18,7 @@
 /* object */
 
 // component
+@use "object/component/background";
 @use "object/component/icon";
 @use "object/component/image";
 @use "object/component/text";
@@ -26,6 +27,7 @@
 // project
 @use "object/project/card";
 @use "object/project/content";
+@use "object/project/hamburger";
 @use "object/project/introduction";
 @use "object/project/navigation";
 @use "object/project/news";
@@ -36,6 +38,4 @@
 
 // utility
 
-// @use "object/component/";
-// @use "object/project/";
-// @use "object/utility/";
+@use "object/utility/overlay";

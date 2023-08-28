@@ -1,7 +1,11 @@
 @use "../../foundation/global" as g;
 
 .p-navigation__menu {
-  display: flex;
+  display: none;
+
+  @include g.breakpoint( pc ) {
+    display: flex;
+  }  
 }
 
 .p-navigation__menu__item {

@@ -1,0 +1,19 @@
+@use "../../foundation/global" as g;
+
+.c-background__overlay {
+  &::after {
+    content: "";
+    display: block;
+  }
+}
+
+.c-background__overlay {
+	position: absolute; /* ブラウザの定位置に固定 */
+  background-color: rgba(0, 0, 0, 0.5);
+	width: 100%; /* 要素の横幅を画面全体に */
+	height: 100%; /* 要素の高さを画面全体に */
+	top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
+	left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
+	z-index: 1000; /* 要素をコンテンツより前面に（要調整） */
+  // display: none;
+}

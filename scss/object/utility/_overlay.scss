@@ -1,0 +1,23 @@
+@use "../../foundation/global" as g;
+
+.u-background__overlay {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.u-background__overlay.js-height {
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
