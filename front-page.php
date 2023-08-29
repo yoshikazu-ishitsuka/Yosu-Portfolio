@@ -172,7 +172,7 @@
                         ご連絡は下記のリンクよりお問い合わせページにてお願いいたします。
                     </p>
                     <button class="p-contact__link">
-                        <a href="">
+                        <a href="//yosu-site.local/contact">
                             <img class="c-icon__contact" src="<?php echo esc_url( get_theme_file_uri( '/images/top/mail2.png' )); ?>" alt="お問い合わせリンクボタン">
                             <!-- <span>お問い合わせリンクボタン</span> -->
                         </a>

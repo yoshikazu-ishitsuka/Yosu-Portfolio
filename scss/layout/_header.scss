@@ -1,8 +1,9 @@
 @use "../foundation/global" as g;
 
 .l-header {
-  background-color: beige;
+  background-color: g.$bgcolor_base;
   height: 70px;
+  margin-bottom: 5%;
 }
 
 .l-header__inner {

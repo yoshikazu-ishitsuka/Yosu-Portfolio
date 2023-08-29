@@ -1,8 +1,10 @@
+@use "../foundation/global" as g;
+
 .l-footer {
   width: 100vw;
   height: 100px;
   margin-top: 20%;
-  background-color: beige;  
+  background-color: g.$bgcolor_base;
 }
 
 .l-footer__inner {
