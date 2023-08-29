@@ -23,6 +23,7 @@ function custom_theme_support()
 
         register_nav_menus( array (
             'header_menu' => esc_html( 'header-menu', 'yosu-portfolio' ),
+            'hamburger_menu' => esc_html( 'hamburger-menu', 'yosu-portfolio' ),
         ));
 
 }

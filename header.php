@@ -33,7 +33,6 @@
                             'menu_id'         => '',
                             'items_wrap'      => '%3$s',
                             'add_li_class'    => 'p-navigation__menu__item'
-
                         ));
                     ?>
                     <!-- <li class="p-navigation__menu__item"><a href="">制作実績</a></li>

@@ -12,6 +12,7 @@ body {
 
 body.is-open {
   position: fixed;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -81,6 +82,37 @@ h6 {
   .l-header__inner {
     padding: 0 30px;
   }
+}
+
+@media (max-width: 1024px) {
+  .l-header.is-open {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 782px) {
+  .l-header.is-open {
+    margin-top: 46px;
+  }
+}
+
+.l-sidebar {
+  width: 0;
+  height: 100%;
+  background-color: beige;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  visibility: hidden; /* 初期状態で非表示 */
+}
+
+.l-sidebar.is-open {
+  width: 100%;
+  display: block;
+  visibility: visible; /* メニューが開かれた時に表示 */
+  left: 20%;
+  list-style: none;
+  z-index: 999;
+  transition: left 0.5s;
 }
 
 /* object */
@@ -220,7 +252,6 @@ h6 {
 .p-hamburger {
   width: 50px;
   height: 50px;
-  background-color: beige;
   position: relative;
   font-size: 0;
 }
@@ -262,6 +293,7 @@ h6 {
   top: 0;
   width: 50px;
   height: 50px;
+  z-index: 1000;
 }
 .p-hamburger.is-open::before {
   background: #000;
@@ -375,6 +407,31 @@ h6 {
     background-position-x: 200%;
   }
 }
+.p-navigation__sidebar {
+  font-size: 0;
+}
+.p-navigation__sidebar.is-open {
+  font-size: 24px;
+  margin-top: 20%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.p-navigation__menu__item--sidebar.is-open {
+  border-bottom: 1px solid;
+  padding-bottom: 1%;
+  width: 400px;
+}
+.p-navigation__menu__item--sidebar > a:hover {
+  background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center/200% auto;
+  animation: about 1s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .p-news {
   width: 100%;
   height: 200px;
@@ -881,6 +938,7 @@ h6 {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 888;
   background-color: rgba(0, 0, 0, 0.5);
 }
 

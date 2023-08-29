@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_sidebar(); ?>
     <article class="p-introduction__wrapper">
         <section class="p-introduction__visual">
             <div class="p-introduction__main">

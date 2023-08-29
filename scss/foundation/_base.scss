@@ -11,6 +11,7 @@ body {
 
 body.is-open {
   position: fixed;
+  overflow: hidden;
 }
 
 .wrapper {
