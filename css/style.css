@@ -143,6 +143,12 @@ h6 {
   filter: invert(100%);
 }
 
+.c-icon__contact {
+  list-style: none;
+  width: 60px;
+  display: inline-block;
+}
+
 .c-image__mask {
   display: block;
   line-height: 0;
@@ -177,6 +183,22 @@ h6 {
 }
 @media (min-width: 521px) {
   .c-text__skill {
+    font-size: 24px;
+  }
+}
+
+.c-text__contact {
+  font-size: 15px;
+  font-family: serif;
+  line-height: 1.5;
+}
+@media (min-width: 600px) {
+  .c-text__contact {
+    font-size: 18px;
+  }
+}
+@media (min-width: 961px) {
+  .c-text__contact {
     font-size: 24px;
   }
 }
@@ -241,6 +263,57 @@ h6 {
 .no-image {
   width: 300px;
   height: 200px;
+}
+
+.p-contact {
+  width: 100%;
+  height: auto;
+}
+.p-contact .c-text__undertext::before {
+  content: "お問い合わせ";
+  width: 110px;
+  height: 1px;
+  bottom: -10px;
+  left: calc(50% - 40px);
+}
+.p-contact .c-text__underline::after {
+  width: 60px;
+  height: 1px;
+  bottom: -5px;
+  left: calc(50% - 30px);
+}
+@media (min-width: 521px) {
+  .p-contact .c-text__underline::after {
+    width: 120px;
+    left: calc(50% - 60px);
+  }
+}
+
+.p-contact__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 521px) {
+  .p-contact__title {
+    margin-bottom: 5rem;
+  }
+}
+
+.p-contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-contact__link {
+  margin-top: 10%;
+}
+@media (min-width: 521px) {
+  .p-contact__link {
+    margin-top: 8%;
+  }
 }
 
 .p-content {
