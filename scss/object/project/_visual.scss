@@ -25,7 +25,11 @@
   background-size: 300%;
 
   @include g.breakpoint( tablet ) {
-    font-size: 50px;
+    font-size: 30px;
+  }
+
+  @include g.breakpoint( pc ) {
+    font-size: 60px;
   }
 }
 

@@ -23,19 +23,40 @@
 }
 
 .p-introduction__title {
-  width: 285px;
+  width: auto;
+  // width: 285px;
+  // background-color: g.$bgcolor_sub;
+  // color: #fff;
+  // padding: 10px 3%;
+  // border-radius: 10px;
+  // border-bottom: 1px solid;
   letter-spacing: 0.1em;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 5%;
   font-family: serif;
-  font-size: 26px;
+  font-size: 13px;
   word-wrap: break-word;
+  position: relative;
+  // box-shadow: 10px 5px 10px #ccc;
+  
+  @include g.breakpoint( tablet ) {
+    width: auto;
+    font-size: 20px;
+  }
 
   @include g.breakpoint( pc ) {
     width: auto;
     font-size: 36px;
   }
 }
+
+// .c-text__underline::after {
+//   content: '';
+//   width: 180px;
+//   height: 1px;
+//   bottom: -13px;
+//   left: calc(50% - 90px);
+// }
 
 .p-introduction__detail {
   width: 100%;

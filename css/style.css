@@ -478,13 +478,20 @@ h6 {
 }
 
 .p-introduction__title {
-  width: 285px;
+  width: auto;
   letter-spacing: 0.1em;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 5%;
   font-family: serif;
-  font-size: 26px;
+  font-size: 13px;
   word-wrap: break-word;
+  position: relative;
+}
+@media (min-width: 521px) {
+  .p-introduction__title {
+    width: auto;
+    font-size: 20px;
+  }
 }
 @media (min-width: 961px) {
   .p-introduction__title {
@@ -1055,7 +1062,12 @@ h6 {
 }
 @media (min-width: 521px) {
   .p-visual__main__title {
-    font-size: 50px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 961px) {
+  .p-visual__main__title {
+    font-size: 60px;
   }
 }
 
