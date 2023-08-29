@@ -180,6 +180,12 @@
                 </div>
             </section>
             <!-- お問い合わせここまで -->
+            
+            <a class="p-page__top" href="#">
+                <div class="p-page-up">
+                    <i class="fa-solid fa-arrow-up arrow-up"></i>
+                </div>
+            </a>
 
         </article>
     </main>
