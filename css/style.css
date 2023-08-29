@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html.admin {
+  margin-top: 0 !important;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -81,21 +85,16 @@ h6 {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  margin-top: 46px;
 }
 @media (min-width: 521px) {
   .l-header__inner {
     padding: 0 30px;
   }
 }
-
-@media (max-width: 1024px) {
-  .l-header.is-open {
+@media (min-width: 783px) {
+  .l-header__inner {
     margin-top: 32px;
-  }
-}
-@media (max-width: 782px) {
-  .l-header.is-open {
-    margin-top: 46px;
   }
 }
 
@@ -112,11 +111,17 @@ h6 {
 .l-sidebar.is-open {
   width: 100%;
   display: block;
+  margin-top: 46px;
   visibility: visible; /* メニューが開かれた時に表示 */
   left: 20%;
   list-style: none;
   z-index: 999;
   transition: left 0.5s;
+}
+@media (min-width: 783px) {
+  .l-sidebar.is-open {
+    margin-top: 32px;
+  }
 }
 
 /* object */

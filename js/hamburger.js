@@ -1,10 +1,11 @@
-const hamburger = document.querySelector( ".js-hamburger" );
-const naviSide      = document.querySelector( ".p-navigation__sidebar" );
-const body      = document.querySelector( "body" );
-const backOver  = document.querySelector( ".u-background__overlay" );
-const sideBar  = document.querySelector( ".l-sidebar" );
+const hamburger      = document.querySelector( ".js-hamburger" );
+const naviSide       = document.querySelector( ".p-navigation__sidebar" );
+const body           = document.querySelector( "body" );
+const backOver       = document.querySelector( ".u-background__overlay" );
+const sideBar        = document.querySelector( ".l-sidebar" );
 const naviItemsSide  = document.querySelectorAll( ".p-navigation__menu__item--sidebar" );
-const menuItem  = document.querySelector( ".menu-item" );
+const menuItem       = document.querySelector( ".menu-item" );
+const lHead          = document.querySelector( ".l-header" );
 
 // ハンバーガーメニュー押下時の処理
 hamburger.addEventListener( "click", () => {
@@ -21,9 +22,9 @@ hamburger.addEventListener( "click", () => {
   // if( window.matchMedia( "(min-width: 600px)" ).matches ) {
   //   dorower.classList.remove( "is-open" );
   // }
-  // if( document.getElementById( "wpadminbar" ) != null ) {
-	// lHead.classList.toggle( "is-open" );
-  // }
+  if( document.getElementById( "wpadminbar" ) != null ) {
+	lHead.classList.toggle( "is-open" );
+  }
 });
 
 // リサイズしたらハンバーガーメニューを閉じる

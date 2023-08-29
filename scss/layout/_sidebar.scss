@@ -19,6 +19,7 @@
 .l-sidebar.is-open {
   width: 100%;
   display: block;
+  margin-top: 46px;
   // opacity: 1; /* メニューが開かれた時に不透明に */
   visibility: visible; /* メニューが開かれた時に表示 */
   left: 20%;
@@ -27,4 +28,8 @@
   transition: left 0.5s;
   // transition-property: display;
   // transition-duration: 0.5s;
+
+  @media ( min-width: 783px ) {
+    margin-top: 32px;
+  }
 }

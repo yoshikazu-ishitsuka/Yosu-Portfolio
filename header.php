@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html class="admin" <?php language_attributes(); ?>>
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Yosu-Portfolio yoshikazu_ishitsukaのポートフォリオサイトです">
