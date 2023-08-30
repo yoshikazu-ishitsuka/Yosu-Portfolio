@@ -11,6 +11,13 @@
     </div>
 </footer>
 
+<!-- ページのトップに戻る -->
+<a class="p-page__top" href="#">
+    <div class="p-page-up">
+        <i class="fa-solid fa-arrow-up arrow-up"></i>
+    </div>
+</a>
+
 <?php wp_footer(); ?>
 </article>
 
