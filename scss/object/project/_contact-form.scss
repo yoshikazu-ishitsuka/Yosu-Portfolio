@@ -1,0 +1,67 @@
+@use "../../foundation/global" as g;
+
+.p-contact-form__outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.p-contact-form {
+  // margin-top: 10%;
+  margin: 10% 3% 0;
+
+  dt {
+    margin-top: 5%;
+  }
+
+  .mandatory-tag {
+    // color: deeppink;
+    // color: fuchsia;
+    color: g.$bgcolor_sub;
+  }
+
+  input[ type="text" ] {
+    // 題名
+    width: 100%;
+    height: 40px;
+    max-width: 420px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    font-weight: normal;
+  }
+
+  dd {
+    input,
+    textarea {
+      // メールアドレス、メッセージ本文
+      width: 100%;
+      height: 40px;
+      max-width: 420px;
+      border: 1px solid #707070;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-top: 10px;
+      // font-family: serif;
+    }
+
+    textarea {
+      height: 200px;
+      padding-top: 10px;
+    }
+  }
+
+  label {
+    font-size: 20px;
+    font-family: serif;
+  }
+
+  .button {
+    margin-top: 5%;
+    padding: 10px 15px;
+    background-color: #7fff7f;
+    border-radius: 5px;
+  }
+}

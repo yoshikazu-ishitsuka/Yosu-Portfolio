@@ -1,0 +1,20 @@
+@use "../../foundation/global" as g;
+
+.c-icon__sns {
+		list-style: none;
+    width: 40px;
+		display: block;
+		transition: filter 0.5s 0s ease;
+
+		&:hover {
+			background: #fff;
+			border-radius: 50%;
+			filter: invert( 100% );
+		}
+	}
+
+	.c-icon__contact {
+		list-style: none;
+    width: 60px;
+		display: inline-block;
+	}

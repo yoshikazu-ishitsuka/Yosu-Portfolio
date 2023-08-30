@@ -1,0 +1,56 @@
+@use "../../foundation/global" as g;
+
+.p-page__top {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+
+    /*このクラスが付与されると表示する*/
+&.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+  &:hover {
+    border-color: g.$bgcolor_sub;
+
+    .fa-arrow-up::before {
+      color: g.$bgcolor_sub; 
+    }
+  }
+}
+
+// .pagetop__arrow {
+//   height: 10px;
+//   width: 10px;
+//   border-top: 3px solid #000;
+//   border-right: 3px solid #000;
+//   transform: translateY(20%) rotate(-45deg);
+// }
+
+// ArrowUp //
+.arrow-up {
+  position: relative;
+  font-size: 1em;
+}
+
+.fa-arrow-up::before {
+  content: '\f062';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  color: #000;
+}

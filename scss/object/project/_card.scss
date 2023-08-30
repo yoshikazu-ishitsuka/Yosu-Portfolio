@@ -1,0 +1,15 @@
+@use "../../foundation/global" as g;
+
+.p-card__works__image {
+    display: inline-block;
+		height: 200px;
+		transition: transform .6s ease;
+		&:hover {
+			transform: scale(1.1);
+    }
+}
+
+.no-image {
+  width: 300px;
+  height: 200px;
+}

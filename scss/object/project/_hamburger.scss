@@ -1,0 +1,74 @@
+@use "../../foundation/global" as g;
+@use "sass:math";
+
+$btnWidth: 30px;
+$btnHeight: 2px;
+
+.p-hamburger {
+  width: 50px;
+  height: 50px;
+  // background-color: beige;
+  position: relative;
+  font-size: 0;
+
+  @include g.breakpoint( pc ) {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: $btnWidth;
+    height: $btnHeight;
+    background: #000;
+    position: absolute;
+    left: calc(50% - math.div(#{$btnWidth}, 2));
+    display: block;
+    transition: transform 0.2s;
+  }
+  &::before {
+    top: 15px;
+  }
+  &::after {
+    bottom: 15px;
+  }
+
+  > span {
+    width: $btnWidth;
+    height: $btnHeight;
+    background: #000;
+    // background-size: auto $btnHeight;
+    position: absolute;
+    left: calc(50% - math.div(#{$btnWidth}, 2));
+    top: 48%;
+    transition: transform 0.2s;
+  }
+
+  // is-open //
+  &.is-open {
+    position: relative;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+
+    &::before {
+      background: #000;
+      transform: rotate(45deg);
+      top: 24px;
+    }
+    &::after {
+      background: #000;
+      transform: rotate(-45deg);
+      top: 24px;
+    }
+    > span {
+      background: none;
+    }
+  }
+
+}

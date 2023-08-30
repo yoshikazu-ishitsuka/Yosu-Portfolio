@@ -1,0 +1,64 @@
+@use "../../foundation/global" as g;
+
+.p-navigation__menu {
+  display: none;
+
+  @include g.breakpoint( pc ) {
+    display: flex;
+  }  
+}
+
+.p-navigation__menu__item {
+  font-size: 11px;
+  margin: 0 5px;
+
+  @include g.breakpoint( tablet ) {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+  
+  &:hover{
+    background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center/200% auto;
+    animation: about 1s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes about {
+  100% {
+    background-position-x: 200%;
+  }
+}
+
+.p-navigation__sidebar {
+  font-size: 0;
+
+  &.is-open {
+    font-size: 24px;
+    margin-top: 20%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.p-navigation__menu__item--sidebar {
+  &.is-open {
+    border-bottom: 1px solid;
+    padding-bottom: 1%;
+    width: 400px;
+  }
+
+  > a {
+    &:hover {
+      background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center/200% auto;
+      animation: about 1s linear infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

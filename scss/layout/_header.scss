@@ -1,0 +1,40 @@
+@use "../foundation/global" as g;
+
+.l-header {
+  background-color: g.$bgcolor_base;
+  height: 70px;
+  margin-bottom: 5%;
+}
+
+.l-header__inner {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  
+  @include g.breakpoint( tablet ) {
+    padding: 0 30px;
+  }
+  
+}
+
+// .l-header__inner {
+//   &.active {
+//     margin-top: 46px;
+    
+//     @media ( min-width: 783px ) {
+//       margin-top: 32px;
+//     }
+//   }
+// }
+
+
+// .l-header.is-open {
+//   @media ( max-width: 1024px ) {
+//     margin-top: 32px;
+//   }
+//   @media ( max-width: 782px ) {
+//     margin-top: 46px;
+//   }
+// }

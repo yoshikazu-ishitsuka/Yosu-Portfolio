@@ -1,0 +1,82 @@
+@use "../../foundation/global" as g;
+
+.p-contact {
+  width: 100%;
+  height: auto;
+
+  .c-text__undertext::before {
+    content: "お問い合わせ";
+    width: 110px;
+    height: 1px;
+    bottom: -10px;
+    left: calc(50% - 40px);
+  }
+  
+  .c-text__underline::after {
+    width: 60px;
+    height: 1px;
+    bottom: -5px;
+    left: calc(50% - 30px);
+    
+    @include g.breakpoint( tablet ) {
+      width: 120px;
+      left: calc(50% - 60px);
+    }
+  }
+
+}
+
+.p-contact__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  
+  @include g.breakpoint( tablet ) {
+    margin-bottom: 5rem;
+  }  
+}
+
+.p-contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-contact__link {
+  margin-top: 10%;
+  
+  @include g.breakpoint( tablet ) {
+    margin-top: 8%;    
+  }  
+}
+
+.c-icon__contact {
+  transform: scale(1);
+  transition: transform 0.3s, rotate 0.3s;
+}
+
+.c-icon__contact:hover {
+  transform: scale(1.3) rotate(360deg);
+}
+
+// .c-icon__contact {
+//   opacity: 0.8;
+//   transition: opacity 0.3s, background-color 0.3s;
+// }
+
+// .c-icon__contact:hover {
+//   opacity: 1;
+//   background-color: #ffcc00;
+// }
+
+// .c-icon__contact {
+//   position: relative;
+//   left: 0;
+//   transition: left 0.3s, outline 0.3s;
+// }
+
+// .c-icon__contact:hover {
+//   left: 10px;
+//   outline: 2px solid #ff5500;
+// }

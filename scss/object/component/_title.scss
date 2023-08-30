@@ -1,0 +1,50 @@
+@use "../../foundation/global" as g;
+
+.c-title {
+  font-weight: 700;
+  font-size: 10px;
+
+  @media ( min-width: 375px ) {
+    font-size: 16px;
+  }
+
+  @include g.breakpoint( tablet ) {
+    font-size: 24px;
+  }
+}
+
+.c-title__headline {
+  position: relative;
+  font-weight: 700;
+  font-family: serif;
+  font-size: 30px;
+
+
+  @include g.breakpoint( pc ) {
+    font-size: 60px;
+  }
+}
+
+.c-title__sns {
+  font-size: 16px;
+  margin-top: 2rem;
+  text-align: center;
+  
+  @media ( min-width: 600px ) {
+    text-align: left;
+  }
+  
+  @include g.breakpoint( pc ) {
+    font-size: 20px;
+  }
+
+  @media ( min-width: 1200px ) {
+    font-size: 30px;
+  }
+
+}
+
+.c-title__contact {
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}

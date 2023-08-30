@@ -1,0 +1,255 @@
+@use "../../foundation/global" as g;
+
+.p-skill {
+  margin-top: 30%;
+  width: 100%;
+  height: auto;
+
+  @media ( min-width: 600px ) {
+    margin-top: 20%;
+  }
+
+  .c-text__undertext::before {
+    content: "スキル";
+    width: 110px;
+    height: 1px;
+    bottom: -10px;
+    left: calc(50% - 25px);
+  }
+  
+  .c-text__underline::after {
+    width: 60px;
+    height: 1px;
+    bottom: -5px;
+    left: calc(50% - 30px);
+    
+    @include g.breakpoint( tablet ) {
+      width: 80px;
+      left: calc(50% - 40px);
+    }
+    
+  }
+}
+
+.p-skill__title {
+  display: flex;
+  justify-content: center;
+}
+
+.p-skill__outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.p-skill__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin-top: 3rem;
+  
+  @include g.breakpoint( tablet ) {
+    padding: 0 100px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 250px; // 下と統一すること
+  }
+}
+
+.p-skill__list {
+  width: 250px; // 上と統一すること
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // HTML5 //
+  .html5 {
+    position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
+  }
+
+  .fa-html5::before {
+    content: '\f13b';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #FD5722;
+  }
+
+  .fa-html5::after {
+    content: 'HTML5';
+    position: absolute;
+    top: -17px;
+    left: -7px;
+    font-size: 20px;
+    font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 4px;
+    }
+  }
+
+  // CSS3 //
+  .css3 {
+    position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
+  }  
+
+  .fa-css3-alt::before {
+    content: '\f38b';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #239AF8;
+  }
+
+  .fa-css3-alt::after {
+    content: 'CSS3';
+    position: absolute;
+    top: -17px;
+    left: 0;
+    font-size: 20px;
+    font-style: normal;
+    
+    @include g.breakpoint( tablet ) {
+      left: 12px;
+    }
+  }
+
+  // Sass //
+  .sass {
+    position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
+  }
+
+  .fa-sass::before {
+    content: '\f41e';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #CB6699;
+  }
+
+  .fa-sass::after {
+    content: 'Sass';
+    position: absolute;
+    top: -31px;
+    left: 11px;
+    font-size: 24px;
+    font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 29px;
+    }
+  }
+
+  // JS //
+  .js {
+    position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
+  }
+
+  .fa-square-js::before {
+    content: '\f3b9';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #F5DE1B;
+  }
+
+  .fa-square-js::after {
+    content: 'JavaScript jQuery';
+    position: absolute;
+    top: -46px;
+    left: -8px;
+    font-size: 20px;
+    font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 4px;
+    }
+  }
+
+  // WordPress //
+  .wp {
+    position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
+  }
+
+  .fa-wordpress::before {
+    content: '\f19a';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #20759A;
+  }
+
+  .fa-wordpress::after {
+    content: 'WordPress';
+    position: absolute;
+    top: -33px;
+    left: -25px;
+    font-size: 24px;
+    font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: -10px;
+    }
+  }
+
+  // Figma //
+  .figma {
+    position: relative;
+    font-size: 4em;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 6em;
+    }
+  }
+
+  .fa-figma::before {
+    content: '\f799';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    color: #303030;
+  }
+
+  .fa-figma::after {
+    content: 'Figma';
+    position: absolute;
+    top: -33px;
+    left: -8px;
+    font-size: 24px;
+    font-style: normal;
+
+    @include g.breakpoint( tablet ) {
+      left: 4px;
+    }
+  }
+
+}

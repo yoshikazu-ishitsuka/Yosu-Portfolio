@@ -1,0 +1,47 @@
+@use "../../foundation/global" as g;
+
+.p-works {
+  width: 100%;
+  height: auto;
+
+  .c-text__undertext::before {
+    content: "制作実績";
+    width: 110px;
+    height: 1px;
+    bottom: -10px;
+    left: calc(50% - 30px);
+  }
+  
+  .c-text__underline::after {
+    width: 60px;
+    height: 1px;
+    bottom: -5px;
+    left: calc(50% - 30px);
+    
+    @include g.breakpoint( tablet ) {
+      width: 80px;
+      left: calc(50% - 40px);
+    }
+  }
+
+}
+
+.p-works__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.p-works__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.p-works__inner__title {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 25px;
+  font-family: monospace;
+}

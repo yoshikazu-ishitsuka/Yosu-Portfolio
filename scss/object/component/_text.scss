@@ -1,0 +1,47 @@
+@use "../../foundation/global" as g;
+
+.c-text__copyright{
+  font-family: serif;
+}
+
+.c-text__undertext::before {
+  display: inline-block;
+  position: absolute;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: serif;
+}
+
+.c-text__underline::after {
+    content: "";
+    display: inline-block;
+    background-color: #000;
+    position: absolute;
+}
+
+.c-text__skill {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  text-align: justify;
+  margin-top: 10%;
+
+  @include g.breakpoint( tablet ) {
+    font-size: 24px;
+  }
+}
+
+.c-text__contact {
+  font-size: 15px;
+  font-family: serif;
+  line-height: 1.5;
+
+
+  @media ( min-width: 600px ) {
+    font-size: 18px;
+  }
+
+  @include g.breakpoint( pc ) {
+    font-size: 24px;
+  }
+}
