@@ -620,6 +620,26 @@ h6 {
   color: #000;
 }
 
+.p-page__error {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0 10% 0 20%;
+}
+
+.p-page__error__h2 {
+  color: red;
+}
+
+.p-page__error__inner {
+  line-height: 2;
+}
+
+.p-page__error__top {
+  margin-top: 5%;
+  font-size: 20px;
+}
+
 .p-profile {
   width: 100%;
   height: auto;
