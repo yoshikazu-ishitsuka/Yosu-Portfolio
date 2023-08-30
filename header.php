@@ -46,3 +46,22 @@
 
     </header>
     
+<!-- 管理バーがあるかどうかで上の余白を調整 -->
+<?php if( is_user_logged_in() ) : ?>
+    <style type="text/css">
+    .l-header__inner {
+        margin-top: 46px;
+    }
+    @media ( min-width: 783px ) {
+        .l-header__inner {
+            margin-top: 32px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #wpadminbar {
+            position: fixed !important;
+        }
+    }
+    </style>
+<?php endif; ?>
