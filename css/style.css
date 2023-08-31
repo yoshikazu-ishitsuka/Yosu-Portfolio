@@ -250,11 +250,22 @@ h6 {
 .c-title__contact {
   border-bottom: 1px solid;
   padding-bottom: 5px;
+  font-weight: 700;
 }
 
 .c-title__privacy-policy {
   font-weight: 700;
   text-align: center;
+  font-size: 24px;
+}
+@media (min-width: 521px) {
+  .c-title__privacy-policy {
+    font-size: 30px;
+  }
+}
+.c-title__privacy-policy > span {
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
 }
 
 .p-card__works__image {
@@ -653,6 +664,7 @@ h6 {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
+  overflow-x: hidden;
 }
 
 .p-profile {
