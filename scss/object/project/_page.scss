@@ -54,3 +54,24 @@
   font-style: normal;
   color: #000;
 }
+
+.p-page__error {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  width: auto;
+  margin: 0 10% 0 20%;
+}
+
+.p-page__error__h2 {
+  color: red;
+}
+
+.p-page__error__inner {
+  line-height: 2;
+}
+
+.p-page__error__top {
+  margin-top: 5%;
+  font-size: 20px;
+}

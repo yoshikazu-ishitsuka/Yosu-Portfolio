@@ -1,0 +1,8 @@
+@use "../../foundation/global" as g;
+
+.p-privacy-policy {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  overflow-x: hidden;
+}

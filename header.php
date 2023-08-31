@@ -49,11 +49,13 @@
 <!-- 管理バーがあるかどうかで上の余白を調整 -->
 <?php if( is_user_logged_in() ) : ?>
     <style type="text/css">
-    .l-header__inner {
+    .l-header__inner,
+    .l-sidebar.is-open {
         margin-top: 46px;
     }
     @media ( min-width: 783px ) {
-        .l-header__inner {
+        .l-header__inner,
+        .l-sidebar.is-open {
             margin-top: 32px;
         }
     }
