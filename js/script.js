@@ -30,3 +30,16 @@ jQuery(function() {
 //     }
 //   });
 // });
+
+jQuery(function () {
+  jQuery(window).scroll(function () {
+    jQuery('.fade').each(function () {
+      const targetElement = jQuery(this).offset().top;
+      const scroll = jQuery(window).scrollTop();
+      const windowHeight = jQuery(window).height();
+      if(scroll > targetElement - windowHeight) {
+        jQuery(this).addClass('view');
+      }
+    });
+  });
+});

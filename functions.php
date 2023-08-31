@@ -97,6 +97,28 @@ function create_post_type()
     //         'update_count_callback' => '_update_post_term_count', // カスタムタクソノミーをタグのように使いたい場合は、オプションの'update_count_callback' => '_update_post_term_count'を必ず追加します
     //     )
     // );
+
+    register_post_type(
+        'news', // 投稿タイプ名
+        [
+        'labels' => [
+            'name'          => 'お知らせ', // 管理画面上で表示する投稿タイプ名
+            'add_new'       => '新規追加', // 新規追加のラベル
+            // 'add_new_item' => 'サンプル投稿新規登録', // 編集画面ラベル(新規登録時)
+            // 'edit_item' => 'サンプル投稿編集', //編集画面ラベル(既存投稿編集時)
+            // 'menu_name' => 'サンプル投稿', //管理画面メニュー(親ラベル)
+            'all_items'     => 'お知らせ一覧', //管理画面メニュー(一覧ラベル)
+            // 'search_items' => 'サンプル投稿を検索' , //検索フォームボタンラベル
+            'singular_name' => 'news',    // カスタム投稿の識別名
+        ],
+        'public'        => true,  // カスタム投稿タイプの表示(trueにする)
+        'has_archive'   => true, // カスタム投稿一覧(true:表示/false:非表示)
+        'menu_position' => 5,     // 管理画面上での表示位置
+        'show_in_rest'  => true,  // true:「Gutenberg」/ false:「ClassicEditor」
+        'supports' => $supports
+        ]
+    );
+
 }
 
 // Contact Form 7で自動挿入されるPタグ、brタグを削除

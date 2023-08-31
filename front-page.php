@@ -19,7 +19,7 @@
             <!-- お知らせここまで -->
 
             <!-- プロフィール -->
-            <section class="p-profile" id="profile">
+            <section class="p-profile fade" id="profile">
                 <div class="p-profile__outer">
                     <dl class="p-profile__inner">
                         <dt class="c-title__headline c-text__underline c-text__undertext">
@@ -82,7 +82,7 @@
             <!-- プロフィールここまで -->
 
             <!-- スキル -->
-            <section class="p-skill" id="skill">
+            <section class="p-skill fade" id="skill">
                 <div class="p-skill__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         SKILL
@@ -148,7 +148,7 @@
             <!-- スキルここまで -->
 
             <!-- 制作実績 -->
-            <section class="p-works" id="works">
+            <section class="p-works fade" id="works">
                 <div class="p-works__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         WORKS
@@ -161,7 +161,7 @@
             <!-- 制作実績ここまで -->
             
             <!-- お問い合わせ -->
-            <section class="p-contact" id="contact">
+            <section class="p-contact fade" id="contact">
                 <div class="p-contact__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         CONTACT

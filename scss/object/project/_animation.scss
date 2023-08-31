@@ -1,0 +1,33 @@
+@use "../../foundation/global" as g;
+
+/* その場で */
+.fadeIn{
+  animation-name:fadeInAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  // transition: opacity 4s;
+  }
+  
+  @keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  /* 下から */ 
+  .fade{
+    opacity : 0;
+    transition: all 1s;
+    transform: translateY(100px);
+  }
+
+  .fade.view{
+    opacity: 1;
+    transform: translateY(0);
+  }
