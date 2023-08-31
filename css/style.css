@@ -252,6 +252,11 @@ h6 {
   padding-bottom: 5px;
 }
 
+.c-title__privacy-policy {
+  font-weight: 700;
+  text-align: center;
+}
+
 .p-card__works__image {
   display: inline-block;
   height: 200px;
@@ -638,6 +643,12 @@ h6 {
 .p-page__error__top {
   margin-top: 5%;
   font-size: 20px;
+}
+
+.p-privacy-policy {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
 }
 
 .p-profile {
