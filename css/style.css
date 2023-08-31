@@ -624,7 +624,7 @@ h6 {
 .p-news {
   width: 100%;
   height: auto;
-  margin: 20% 0;
+  margin: 10% 0 20% 0;
 }
 .p-news .c-text__undertext::before {
   content: "お知らせ";
@@ -649,6 +649,7 @@ h6 {
 .p-news__title {
   display: flex;
   justify-content: center;
+  margin-bottom: 10%;
 }
 
 .p-news__inner {
@@ -662,6 +663,35 @@ h6 {
 .p-news__list {
   border-bottom: 1px solid;
   margin-bottom: 15px;
+}
+.p-news__list time {
+  display: block;
+  margin: 20px 0;
+  font-size: 16px;
+}
+@media (min-width: 521px) {
+  .p-news__list time {
+    font-size: 20px;
+  }
+}
+@media (min-width: 961px) {
+  .p-news__list time {
+    font-size: 26px;
+  }
+}
+.p-news__list p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+@media (min-width: 521px) {
+  .p-news__list p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 961px) {
+  .p-news__list p {
+    font-size: 26px;
+  }
 }
 
 .p-page__top {

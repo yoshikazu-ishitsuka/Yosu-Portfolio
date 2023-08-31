@@ -13,7 +13,7 @@
         <article class="p-content">
 
             <!-- お知らせ -->
-            <section class="p-news fade">
+            <section class="p-news fade" id="news">
                 <div class="p-news__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         NEWS

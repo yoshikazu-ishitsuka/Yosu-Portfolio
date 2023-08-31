@@ -12,8 +12,8 @@
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                     <!-- ▽ ループ処理開始 ▽ -->
                     <li class="p-news__list">
-                        <p><?php the_time('Y/n/j'); ?></p>
-                        <h4><?php the_content(); ?></h4>
+                        <time><?php the_time('Y/n/j'); ?></time>
+                        <?php the_content(); ?>
                     </li>
                     <!-- △ ループ処理終了 △ -->
                 <?php endwhile; ?>

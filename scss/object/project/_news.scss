@@ -3,7 +3,7 @@
 .p-news {
   width: 100%;
   height: auto;
-  margin: 20% 0;
+  margin: 10% 0 20% 0;
 
   .c-text__undertext::before {
     content: "お知らせ";
@@ -30,6 +30,7 @@
 .p-news__title {
   display: flex;
   justify-content: center;
+  margin-bottom: 10%;
 }
 
 .p-news__inner {
@@ -43,4 +44,32 @@
 .p-news__list {
   border-bottom: 1px solid;
   margin-bottom: 15px;
+
+  time {
+    display: block;
+    // margin-bottom: 20px;
+    margin: 20px 0;
+    font-size: 16px;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 20px;
+    }
+
+    @include g.breakpoint( pc ) {
+      font-size: 26px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 15px;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 20px;
+    }
+
+    @include g.breakpoint( pc ) {
+      font-size: 26px;
+    }
+  }
 }
