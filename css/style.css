@@ -623,7 +623,45 @@ h6 {
 
 .p-news {
   width: 100%;
-  height: 200px;
+  height: auto;
+  margin: 20% 0;
+}
+.p-news .c-text__undertext::before {
+  content: "お知らせ";
+  width: 110px;
+  height: 1px;
+  bottom: -10px;
+  left: calc(50% - 30px);
+}
+.p-news .c-text__underline::after {
+  width: 60px;
+  height: 1px;
+  bottom: -5px;
+  left: calc(50% - 30px);
+}
+@media (min-width: 521px) {
+  .p-news .c-text__underline::after {
+    width: 80px;
+    left: calc(50% - 40px);
+  }
+}
+
+.p-news__title {
+  display: flex;
+  justify-content: center;
+}
+
+.p-news__inner {
+  margin-top: 3%;
+}
+
+.p-news__content {
+  width: auto;
+}
+
+.p-news__list {
+  border-bottom: 1px solid;
+  margin-bottom: 15px;
 }
 
 .p-page__top {

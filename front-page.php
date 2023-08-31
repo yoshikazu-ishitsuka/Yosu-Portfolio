@@ -13,7 +13,14 @@
         <article class="p-content">
 
             <!-- お知らせ -->
-            <section class="p-news">
+            <section class="p-news fade">
+                <div class="p-news__title">
+                    <h3 class="c-title__headline c-text__underline c-text__undertext">
+                        NEWS
+                    </h3>
+                </div>
+
+                <?php get_template_part( "components/news_content" ); ?>
 
             </section>
             <!-- お知らせここまで -->
