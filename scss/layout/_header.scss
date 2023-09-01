@@ -1,7 +1,8 @@
 @use "../foundation/global" as g;
 
 .l-header {
-  background-color: g.$bgcolor_base;
+  background:linear-gradient(90deg, #4cb7ff, #6dc0f8 30%, g.$bgcolor_base,);
+  // background:linear-gradient(90deg, #4cb7ff, g.$bgcolor_base,);
   height: 70px;
   margin-bottom: 5%;
 }

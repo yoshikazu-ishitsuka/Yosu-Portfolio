@@ -61,7 +61,7 @@ h6 {
   width: 100vw;
   height: 100px;
   margin-top: 20%;
-  background-color: #c3e7ff;
+  background: linear-gradient(90deg, #4cb7ff, #6dc0f8 30%, #c3e7ff);
 }
 
 .l-footer__inner {
@@ -73,7 +73,7 @@ h6 {
 }
 
 .l-header {
-  background-color: #c3e7ff;
+  background: linear-gradient(90deg, #4cb7ff, #6dc0f8 30%, #c3e7ff);
   height: 70px;
   margin-bottom: 5%;
 }
