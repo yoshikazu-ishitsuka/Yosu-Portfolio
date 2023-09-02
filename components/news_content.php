@@ -18,6 +18,13 @@
                     <!-- △ ループ処理終了 △ -->
                 <?php endwhile; ?>
             </ul>
+        <div class="p-news__link">
+            <a href="<?php echo get_post_type_archive_link( 'news' ); ?>">
+                <p>
+                    お知らせの一覧を見る
+                </p>
+            </a>
+        </div>
 
         <?php else: // お知らせがない場合?>
             <p>まだお知らせがありません。</p>
