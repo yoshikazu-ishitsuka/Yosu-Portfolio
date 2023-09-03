@@ -10,6 +10,10 @@
 <body class="home" <?php body_class(); ?>>
 <article class="wrapper u-background__overlay fadeIn">
 
+<!-- <div id="splash">
+    <div id="splash_text"></div>
+</div> -->
+
 <?php wp_body_open(); ?>
     <header class="l-header">
         <div class="l-header__inner">

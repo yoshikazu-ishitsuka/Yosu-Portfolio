@@ -55,6 +55,18 @@ h6 {
   font-size: 16px;
 }
 
+/* Loading背景画面設定 */
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+
 /* background-color */
 /* layout */
 .l-footer {
@@ -62,7 +74,10 @@ h6 {
   height: 100px;
   margin-top: 20%;
   position: absolute;
-  background: linear-gradient(90deg, #4cb7ff, #6dc0f8 30%, #c3e7ff);
+  background: linear-gradient(45deg, hsla(200, 100%, 50%, 0.5), hsla(190, 100%, 50%, 0.5)), url(../images/top/sky.jpg);
+  background-size: cover;
+  background-position: left;
+  animation: cloud 45s linear infinite;
 }
 
 .l-footer__inner {
@@ -74,11 +89,22 @@ h6 {
 }
 
 .l-header {
-  background: linear-gradient(90deg, #4cb7ff, #6dc0f8 30%, #c3e7ff);
+  animation: cloud 45s linear infinite;
+  background: linear-gradient(45deg, hsla(200, 100%, 50%, 0.5), hsla(190, 100%, 50%, 0.5)), url(../images/top/sky.jpg);
+  background-size: cover;
+  background-position: left;
   height: 70px;
   margin-bottom: 5%;
 }
 
+@keyframes cloud {
+  from {
+    background-position: top;
+  }
+  to {
+    background-position: bottom;
+  }
+}
 .l-header__inner {
   height: 70px;
   display: flex;
