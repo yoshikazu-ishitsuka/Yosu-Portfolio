@@ -3,7 +3,7 @@
     <main class="l-main">
         <section class="p-visual__main">
             <div class="p-visual__main__inner">
-                <img class="p-visual__main__img" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual.png' )); ?>" alt="風景写真">
+                <img class="p-visual__main__img" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual.webp' )); ?>" alt="風景写真">
                 <h2 class="p-visual__main__title">
                     <?php bloginfo( 'description' ); ?>
                 </h2>
@@ -74,7 +74,7 @@
                                 </li>
                                 <li class="p-profile__sns__list">
                                     <a href="//app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQM1ITMgoTd" target="_blank">
-                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.png' )); ?>" alt="アイコン">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.webp' )); ?>" alt="アイコン">
                                     </a>
                                 </li>
                             </ul>
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="p-profile__img">
-                    <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.png' )); ?>" alt="">
+                    <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.webp' )); ?>" alt="">
                 </div>
             </section>
             <!-- プロフィールここまで -->

@@ -6,7 +6,7 @@
                 <?php if ( has_post_thumbnail()) : ?>
                 <?php echo get_the_post_thumbnail('', 'medium_large', array( 'class' => 'p-introduction__image') ); ?>
                 <?php else : ?>
-                    <img class="p-introduction__image" src="<?php echo esc_url( get_theme_file_uri('/images/top/main_visual.jpg') ); ?>" alt="アイキャッチ画像">
+                    <img class="p-introduction__image" src="<?php echo esc_url( get_theme_file_uri('/images/top/main_visual.webp') ); ?>" alt="アイキャッチ画像">
                 <?php endif; ?>
             </div>
 
