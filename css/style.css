@@ -171,6 +171,7 @@ h6 {
   list-style: none;
   width: 60px;
   display: inline-block;
+  aspect-ratio: 1/1;
 }
 
 .c-image__mask {
@@ -1011,6 +1012,7 @@ h6 {
 }
 .p-profile__img img {
   width: 100%;
+  aspect-ratio: 4/3;
 }
 @media (min-width: 600px) {
   .p-profile__img img {
@@ -1260,6 +1262,7 @@ h6 {
 
 .p-visual__main__img {
   width: 100vw;
+  aspect-ratio: 4/3;
 }
 
 .p-visual__main__inner {
