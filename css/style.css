@@ -95,14 +95,15 @@ h6 {
   background-position: left;
   height: 70px;
   margin-bottom: 5%;
+  will-change: background-position;
 }
 
 @keyframes cloud {
-  from {
-    background-position: top;
+  0% {
+    background-position: 50% 0%;
   }
-  to {
-    background-position: bottom;
+  100% {
+    background-position: 50% 100%;
   }
 }
 .l-header__inner {
@@ -1271,12 +1272,15 @@ h6 {
   top: 15%;
   left: 10%;
   font-size: 24px;
+  font-weight: bold;
+  color: transparent;
   background: -webkit-linear-gradient(180deg, #1e26cb 0%, #fcfafc 30%, #5cff04 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientEffect 2.5s infinite alternate;
   background-size: 300%;
+  will-change: background-position, color;
 }
 @media (min-width: 521px) {
   .p-visual__main__title {
@@ -1290,11 +1294,14 @@ h6 {
 }
 
 @keyframes gradientEffect {
-  from {
-    background-position: left;
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    background-position: right;
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 .p-works {

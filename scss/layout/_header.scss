@@ -9,17 +9,20 @@
   background-position: left;
   height: 70px;
   margin-bottom: 5%;
+  will-change: background-position;
 }
 
 
 @keyframes cloud {
-  from {
-    background-position: top
+  0% {
+    background-position: 50% 0%;
+    // transform: translateY(0);
     // background-position-y: 0;
     // background-position-x: 0;
   }
-  to {
-    background-position: bottom;
+  100% {
+    background-position: 50% 100%;
+    // transform: translateY(100%);
     // background-position-y: 100vw;
     // background-position-x: 100vw;
   }
