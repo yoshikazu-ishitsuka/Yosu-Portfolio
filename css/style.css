@@ -644,7 +644,12 @@ h6 {
 .p-navigation__menu__item--sidebar.is-open {
   border-bottom: 1px solid;
   padding-bottom: 1%;
-  width: 400px;
+  width: 300px;
+}
+@media (min-width: 521px) {
+  .p-navigation__menu__item--sidebar.is-open {
+    width: 400px;
+  }
 }
 .p-navigation__menu__item--sidebar > a:hover {
   background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center/200% auto;
@@ -956,7 +961,7 @@ h6 {
 }
 .p-profile__inner .introduction {
   font-family: serif;
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.05em;
   line-height: 1.5;
   margin-top: 1rem;

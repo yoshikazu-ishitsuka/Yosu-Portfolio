@@ -53,7 +53,11 @@
   &.is-open {
     border-bottom: 1px solid;
     padding-bottom: 1%;
-    width: 400px;
+    width: 300px;
+    
+    @include g.breakpoint( tablet ) {
+      width: 400px;
+    }
   }
 
   > a {
