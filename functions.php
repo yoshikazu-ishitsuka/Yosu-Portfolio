@@ -125,5 +125,54 @@ function create_post_type()
 // Contact Form 7で自動挿入されるPタグ、brタグを削除
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
-  return false;
+    return false;
 }
+
+/*
+ * link タグを rel="preload" にする。
+ *
+ * @param string $tag    HTMLタグ
+ * @param string $handel handle名。
+ * @param string $href   URL。
+ * @param string $media  メディア属性
+ */
+
+add_filter( 'style_loader_tag', function( $tag, $handle, $href, $media ) {
+    // 管理画面およびログイン画面ではオフ。
+    // もちろん、管理画面やログイン画面で遅延読み込みにしても問題ない。
+    if ( is_admin() || did_action( 'login_head' ) ) {
+        return $tag;
+    }
+    // クリティカルCSSのハンドル名を列挙。多くの場合、テーマのCSS。
+    $criticals = [ 'style' ];
+        // クリティカルCSSかプリントメディアの場合は何もしない。
+        // media="print" の場合はスクリーンではほっといても優先度低。
+    if ( in_array( $handle, $criticals, true ) || 'print' === $media ) {
+    return $tag;
+    }
+    // カスタマイズしたタグを出力。念の為noscriptも追加。
+    $html = <<<'HTML'
+    <link rel="preload" href="%1$s" as="style" onload="this.onload=null;this.rel='stylesheet'" data-handle="%3$s" media="%4$s" />
+    <noscript>
+    %2$s
+    </noscript>
+    HTML;
+    return sprintf( $html, $href, $tag, $handle, $media );
+}, 10, 4 );
+
+/**
+ * scriptタグにdeferをつける
+ *
+ * @param string $tag      scriptタグ
+ * @param string $handle ハンドル名
+ * @return string
+ */
+add_filter( 'script_loader_tag', function( $tag, $handle ) {
+    // deferにできるハンドル名のリスト
+    $deferable = [];
+    if ( ! in_array( $handle, $deferable, true ) ) {
+        return $tag;
+    }
+    // deferをつける
+    return str_replace( 'src=', 'defer src=', $tag );
+}, 10, 2 );
