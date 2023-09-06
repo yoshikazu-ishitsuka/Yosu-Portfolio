@@ -31,3 +31,36 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  // cloud 上から下
+  @keyframes cloud {
+    0% {
+      background-position: 50% 0%;
+      // transform: translateY(0);
+      // background-position-y: 0;
+      // background-position-x: 0;
+    }
+    100% {
+      background-position: 50% 100%;
+      // transform: translateY(100%);
+      // background-position-y: 100vw;
+      // background-position-x: 100vw;
+    }
+  }
+
+// cloudSide 下から上
+  @keyframes cloudSide {
+    0% {
+      // background-position: 50% 0%;
+      // transform: translateY(0);
+      background-position-y: 100vh;
+      // background-position-x: 0;
+    }
+    100% {
+      // background-position: 50% 100%;
+      // transform: translateY(100%);
+      background-position-y: 0;
+      // background-position-x: 100vw;
+    }
+  }
+  

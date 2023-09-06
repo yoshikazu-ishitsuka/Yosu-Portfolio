@@ -98,14 +98,6 @@ h6 {
   will-change: background-position;
 }
 
-@keyframes cloud {
-  0% {
-    background-position: 50% 0%;
-  }
-  100% {
-    background-position: 50% 100%;
-  }
-}
 .l-header__inner {
   height: 70px;
   display: flex;
@@ -122,11 +114,25 @@ h6 {
 .l-sidebar {
   width: 0;
   height: 100%;
-  background-color: beige;
+  background-image: url(../images/top/sky.webp);
   position: absolute;
+  background-position: center;
+  background-size: cover;
   top: 0;
   left: 100%;
   visibility: hidden; /* 初期状態で非表示 */
+}
+
+.l-sidebar::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.5;
 }
 
 .l-sidebar.is-open {
@@ -329,6 +335,22 @@ h6 {
   transform: translateY(0);
 }
 
+@keyframes cloud {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+@keyframes cloudSide {
+  0% {
+    background-position-y: 100vh;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
 .p-card__works__image {
   display: inline-block;
   height: 200px;

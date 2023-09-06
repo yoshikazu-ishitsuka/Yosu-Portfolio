@@ -12,22 +12,6 @@
   will-change: background-position;
 }
 
-
-@keyframes cloud {
-  0% {
-    background-position: 50% 0%;
-    // transform: translateY(0);
-    // background-position-y: 0;
-    // background-position-x: 0;
-  }
-  100% {
-    background-position: 50% 100%;
-    // transform: translateY(100%);
-    // background-position-y: 100vw;
-    // background-position-x: 100vw;
-  }
-}
-
 .l-header__inner {
   height: 70px;
   display: flex;
