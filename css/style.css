@@ -160,6 +160,7 @@ h6 {
   width: 40px;
   display: block;
   transition: filter 0.5s 0s ease;
+  aspect-ratio: 1/1;
 }
 .c-icon__sns:hover {
   background: #fff;
