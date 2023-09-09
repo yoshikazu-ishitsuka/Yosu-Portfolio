@@ -874,7 +874,7 @@ h6 {
 }
 
 .p-pager {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 10%;
 }
 @media (min-width: 521px) {
@@ -901,7 +901,7 @@ h6 {
 
 .prev,
 .next {
-  font-size: 13px;
+  font-size: 15px;
 }
 @media (min-width: 521px) {
   .prev,
