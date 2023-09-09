@@ -1,0 +1,50 @@
+@use "../../foundation/global" as g;
+
+.p-pager {
+  font-size: 14px;
+  margin-top: 10%;
+
+  @include g.breakpoint( tablet ) {
+    font-size: 25px;
+  }
+}
+
+.p-pager__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+  @include g.breakpoint( tablet ) {
+    gap: 40px;
+  }
+}
+
+.p-pager__prev,
+.p-pager__next {
+  font-family: serif;
+}
+
+.prev,
+.next {
+  font-size: 13px;
+  
+  @include g.breakpoint( tablet ) {
+    font-size: 24px;
+  }  
+}
+
+.prev::before {
+  content: '\f0a8';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  color: g.$bgcolor_sub;
+}
+
+.next::before {
+  content: '\f0a9';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  color: g.$bgcolor_sub;
+}

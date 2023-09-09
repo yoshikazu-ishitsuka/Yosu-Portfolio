@@ -873,6 +873,59 @@ h6 {
   font-size: 20px;
 }
 
+.p-pager {
+  font-size: 14px;
+  margin-top: 10%;
+}
+@media (min-width: 521px) {
+  .p-pager {
+    font-size: 25px;
+  }
+}
+
+.p-pager__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (min-width: 521px) {
+  .p-pager__list {
+    gap: 40px;
+  }
+}
+
+.p-pager__prev,
+.p-pager__next {
+  font-family: serif;
+}
+
+.prev,
+.next {
+  font-size: 13px;
+}
+@media (min-width: 521px) {
+  .prev,
+  .next {
+    font-size: 24px;
+  }
+}
+
+.prev::before {
+  content: "\f0a8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  color: #1bc81b;
+}
+
+.next::before {
+  content: "\f0a9";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  color: #1bc81b;
+}
+
 .p-privacy-policy {
   display: flex;
   flex-direction: column;

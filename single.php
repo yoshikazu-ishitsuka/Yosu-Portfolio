@@ -34,7 +34,25 @@
                     <p>表示するものがありません</p>
                 <?php endif; ?>
             </div>
+        </section>
 
+        <section class="p-pager">
+            <ul class="p-pager__list">
+                <?php if ( get_previous_post() ) : ?>
+                    <li class="p-pager__prev">
+                        <?php previous_post_link( '%link', '<i class="fa-solid fa-circle-arrow-left prev"></i>&nbsp;&nbsp;前の制作実績へ' ); ?>
+                    </li>
+                <?php else : ?>
+                    <li class="prev-hidden"></li>
+                <?php endif; ?>
+                <?php if ( get_next_post() ) : ?>
+                    <li class="p-pager__next">
+                        <?php next_post_link( '%link', '次の制作実績へ&nbsp;&nbsp;<i class="fa-solid fa-circle-arrow-right next"></i>' ); ?>
+                    </li>
+                <?php else : ?>
+                    <li class="next-hidden"></li>
+                <?php endif; ?>
+            </ul>
         </section>
 
     </article>
