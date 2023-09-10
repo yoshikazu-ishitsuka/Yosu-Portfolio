@@ -564,7 +564,7 @@ h6 {
   height: auto;
 }
 
-.p-introduction__title {
+.p-introduction__title, .p-introduction__title--works {
   width: auto;
   letter-spacing: 0.1em;
   text-align: center;
@@ -575,16 +575,20 @@ h6 {
   position: relative;
 }
 @media (min-width: 521px) {
-  .p-introduction__title {
+  .p-introduction__title, .p-introduction__title--works {
     width: auto;
     font-size: 20px;
   }
 }
 @media (min-width: 961px) {
-  .p-introduction__title {
+  .p-introduction__title, .p-introduction__title--works {
     width: auto;
     font-size: 36px;
   }
+}
+
+.p-introduction__title--works {
+  margin-bottom: 15%;
 }
 
 .p-introduction__detail {
@@ -604,6 +608,12 @@ h6 {
 .p-introduction__sub__link {
   display: inline-block;
   border-bottom: 1px solid;
+  margin-bottom: 15%;
+}
+@media (min-width: 521px) {
+  .p-introduction__sub__link {
+    margin-bottom: 10%;
+  }
 }
 .p-introduction__sub h2 {
   font-size: 16px;
@@ -1430,6 +1440,51 @@ h6 {
   text-align: center;
   margin-top: 25px;
   font-family: monospace;
+}
+
+.p-works__archive {
+  font-family: serif;
+}
+.p-works__archive .wp-block-heading {
+  font-size: 16px;
+}
+@media (min-width: 521px) {
+  .p-works__archive .wp-block-heading {
+    font-size: 26px;
+  }
+}
+
+.p-works__archive__inner {
+  margin: 3rem;
+}
+@media (min-width: 521px) {
+  .p-works__archive__inner {
+    margin: 3rem 5rem;
+  }
+}
+.p-works__archive__inner > h2 {
+  margin-bottom: 5rem;
+}
+
+.p-works__archive__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.p-works__archive__item {
+  font-size: 16px;
+  border-bottom: 2px dashed;
+}
+@media (min-width: 521px) {
+  .p-works__archive__item {
+    font-size: 20px;
+  }
+}
+@media (min-width: 961px) {
+  .p-works__archive__item {
+    font-size: 26px;
+  }
 }
 
 .u-background__overlay::after {
