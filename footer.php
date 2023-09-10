@@ -26,7 +26,7 @@
 </footer>
 
 <!-- ページのトップに戻る -->
-<a class="p-page__top" href="#">
+<a class="p-page__top" href="#" id="page-top">
     <div class="p-page-up">
         <i class="fa-solid fa-arrow-up arrow-up"></i>
     </div>

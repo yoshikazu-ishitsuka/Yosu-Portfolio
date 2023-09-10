@@ -25,6 +25,7 @@
 @use "object/component/title";
 
 // project
+@use "object/project/animation";
 @use "object/project/card";
 @use "object/project/contact-form";
 @use "object/project/contact";
@@ -34,6 +35,7 @@
 @use "object/project/navigation";
 @use "object/project/news";
 @use "object/project/page";
+@use "object/project/pager";
 @use "object/project/privacy-policy";
 @use "object/project/profile";
 @use "object/project/skill";

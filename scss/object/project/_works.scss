@@ -45,3 +45,49 @@
   margin-top: 25px;
   font-family: monospace;
 }
+
+// archive //
+
+.p-works__archive {
+  font-family: serif;
+
+  .wp-block-heading {
+    font-size: 16px;
+
+    @include g.breakpoint( tablet ) {
+      font-size: 26px;
+    }  
+  }
+}
+
+.p-works__archive__inner {
+  margin: 3rem;
+  
+  @include g.breakpoint( tablet ) {
+    margin: 3rem 5rem;
+  }
+
+  > h2 {
+    margin-bottom: 5rem;
+  }
+}
+
+.p-works__archive__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.p-works__archive__item {
+  font-size: 16px;
+  border-bottom: 2px dashed;
+
+  @include g.breakpoint( tablet ) {
+    font-size: 20px;
+  }
+
+  @include g.breakpoint( pc ) {
+    font-size: 26px;
+  }
+
+}

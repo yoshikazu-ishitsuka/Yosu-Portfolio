@@ -50,6 +50,11 @@
   }
 }
 
+.p-introduction__title--works {
+  @extend .p-introduction__title;
+  margin-bottom: 15%;
+}
+
 // .c-text__underline::after {
 //   content: '';
 //   width: 180px;
@@ -74,6 +79,11 @@
   &__link {
     display: inline-block;
     border-bottom: 1px solid;
+    margin-bottom: 15%;
+    
+    @include g.breakpoint( tablet ) {
+      margin-bottom: 10%;
+    }  
   }
 
   h2 {

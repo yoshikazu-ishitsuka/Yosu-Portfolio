@@ -3,12 +3,12 @@
 .l-sidebar {
   width: 0;
   height: 100%;
-  background-color: beige;
+  background-image: url(../images/top/sky.webp);
   position: absolute;
+  background-position: center;
+  background-size: cover;
   top: 0;
   left: 100%;
-  // display: none;
-  // opacity: 0;
   visibility: hidden; /* 初期状態で非表示 */
   // transition: opacity 0.5s, visibility 0.5s; /* opacity と visibility のアニメーションを設定 */
   // transition: width 0.5s;
@@ -16,10 +16,22 @@
   // transition-duration: 0.5s;
 }
 
+.l-sidebar::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: .5;
+}
+
 .l-sidebar.is-open {
+  // animation: cloudSide 45s linear infinite;
   width: 100%;
   display: block;
-  // margin-top: 46px;
   // opacity: 1; /* メニューが開かれた時に不透明に */
   visibility: visible; /* メニューが開かれた時に表示 */
   left: 20%;
@@ -28,8 +40,4 @@
   transition: left 0.5s;
   // transition-property: display;
   // transition-duration: 0.5s;
-
-  // @media ( min-width: 783px ) {
-  //   margin-top: 32px;
-  // }
 }

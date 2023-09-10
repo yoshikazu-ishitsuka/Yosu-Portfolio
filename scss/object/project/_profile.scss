@@ -104,7 +104,7 @@
 
     .introduction {
       font-family: serif;
-      font-size: 10px;
+      font-size: 13px;
       letter-spacing: 0.05em;
       line-height: 1.5;
       margin-top: 1rem;
@@ -155,6 +155,7 @@
 
   img {
     width: 100%;
+    aspect-ratio: 4 / 3;
     
     @media ( min-width: 600px ) {
       // height: 50%;

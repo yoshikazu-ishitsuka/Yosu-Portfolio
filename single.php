@@ -6,7 +6,7 @@
                 <?php if ( has_post_thumbnail()) : ?>
                 <?php echo get_the_post_thumbnail('', 'medium_large', array( 'class' => 'p-introduction__image') ); ?>
                 <?php else : ?>
-                    <img class="p-introduction__image" src="<?php echo esc_url( get_theme_file_uri('/images/top/main_visual.jpg') ); ?>" alt="アイキャッチ画像">
+                    <img class="p-introduction__image" src="<?php echo esc_url( get_theme_file_uri('/images/top/main_visual.webp') ); ?>" alt="アイキャッチ画像">
                 <?php endif; ?>
             </div>
 
@@ -34,7 +34,25 @@
                     <p>表示するものがありません</p>
                 <?php endif; ?>
             </div>
+        </section>
 
+        <section class="p-pager">
+            <ul class="p-pager__list">
+                <?php if ( get_previous_post() ) : ?>
+                    <li class="p-pager__prev">
+                        <?php previous_post_link( '%link', '<i class="fa-solid fa-circle-arrow-left prev"></i>&nbsp;&nbsp;前の制作実績へ' ); ?>
+                    </li>
+                <?php else : ?>
+                    <li class="prev-hidden"></li>
+                <?php endif; ?>
+                <?php if ( get_next_post() ) : ?>
+                    <li class="p-pager__next">
+                        <?php next_post_link( '%link', '次の制作実績へ&nbsp;&nbsp;<i class="fa-solid fa-circle-arrow-right next"></i>' ); ?>
+                    </li>
+                <?php else : ?>
+                    <li class="next-hidden"></li>
+                <?php endif; ?>
+            </ul>
         </section>
 
     </article>

@@ -3,7 +3,7 @@
     <main class="l-main">
         <section class="p-visual__main">
             <div class="p-visual__main__inner">
-                <img class="p-visual__main__img" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual.png' )); ?>" alt="風景写真">
+                <img class="p-visual__main__img" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual.webp' )); ?>" alt="風景写真">
                 <h2 class="p-visual__main__title">
                     <?php bloginfo( 'description' ); ?>
                 </h2>
@@ -13,13 +13,20 @@
         <article class="p-content">
 
             <!-- お知らせ -->
-            <section class="p-news">
+            <section class="p-news fade" id="news">
+                <div class="p-news__title">
+                    <h3 class="c-title__headline c-text__underline c-text__undertext">
+                        NEWS
+                    </h3>
+                </div>
+
+                <?php get_template_part( "components/news_content" ); ?>
 
             </section>
             <!-- お知らせここまで -->
 
             <!-- プロフィール -->
-            <section class="p-profile" id="profile">
+            <section class="p-profile fade" id="profile">
                 <div class="p-profile__outer">
                     <dl class="p-profile__inner">
                         <dt class="c-title__headline c-text__underline c-text__undertext">
@@ -67,7 +74,7 @@
                                 </li>
                                 <li class="p-profile__sns__list">
                                     <a href="//app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQM1ITMgoTd" target="_blank">
-                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.png' )); ?>" alt="アイコン">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.webp' )); ?>" alt="アイコン">
                                     </a>
                                 </li>
                             </ul>
@@ -76,13 +83,13 @@
                 </div>
 
                 <div class="p-profile__img">
-                    <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.png' )); ?>" alt="">
+                    <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.webp' )); ?>" alt="">
                 </div>
             </section>
             <!-- プロフィールここまで -->
 
             <!-- スキル -->
-            <section class="p-skill" id="skill">
+            <section class="p-skill fade" id="skill">
                 <div class="p-skill__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         SKILL
@@ -148,7 +155,7 @@
             <!-- スキルここまで -->
 
             <!-- 制作実績 -->
-            <section class="p-works" id="works">
+            <section class="p-works fade" id="works">
                 <div class="p-works__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         WORKS
@@ -161,7 +168,7 @@
             <!-- 制作実績ここまで -->
             
             <!-- お問い合わせ -->
-            <section class="p-contact" id="contact">
+            <section class="p-contact fade" id="contact">
                 <div class="p-contact__title">
                     <h3 class="c-title__headline c-text__underline c-text__undertext">
                         CONTACT
