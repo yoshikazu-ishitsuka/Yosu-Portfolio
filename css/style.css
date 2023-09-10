@@ -564,6 +564,16 @@ h6 {
   height: auto;
 }
 
+.p-introduction__image--works {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.p-introduction__image--works:hover {
+  transform: scale(1.1);
+}
+
 .p-introduction__title, .p-introduction__title--works {
   width: auto;
   letter-spacing: 0.1em;

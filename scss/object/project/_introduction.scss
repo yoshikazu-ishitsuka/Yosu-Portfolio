@@ -22,6 +22,17 @@
   height: auto;
 }
 
+.p-introduction__image--works {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .6s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .p-introduction__title {
   width: auto;
   // width: 285px;
