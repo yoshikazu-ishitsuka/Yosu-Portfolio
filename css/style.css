@@ -123,7 +123,7 @@ h6 {
 }
 
 .l-sidebar.bg.lazyloaded {
-  background: url(../images/top/sky.webp);
+  background-image: url(../images/top/sky.webp);
 }
 
 .l-sidebar::after {
