@@ -3,7 +3,7 @@
     <main class="l-main">
         <section class="p-visual__main">
             <div class="p-visual__main__inner">
-                <img class="p-visual__main__img toggleImg" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual_pc.webp' )); ?>" alt="風景写真">
+                <img class="p-visual__main__img toggleImg" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual_pc.webp' )); ?>" alt="風景写真" loading="lazy">
                 <h2 class="p-visual__main__title">
                     <?php bloginfo( 'description' ); ?>
                 </h2>
@@ -59,22 +59,22 @@
                             <ul class="p-profile__sns">
                                 <li class="p-profile__sns__list">
                                     <a href="//twitter.com/it_begi_yos815" target="_blank">
-                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/t_logo.png' )); ?>" alt="Twitterアイコン">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/t_logo.png' )); ?>" alt="Twitterアイコン" loading="lazy">
                                     </a>
                                 </li>
                                 <li class="p-profile__sns__list">
                                     <a href="//github.com/yoshikazu-ishitsuka" target="_blank">
-                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/g_logo.png' )); ?>" alt="アイコン">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/g_logo.png' )); ?>" alt="GitHubアイコン" loading="lazy">
                                     </a>
                                 </li>
                                 <li class="p-profile__sns__list">
                                     <a href="//qiita.com/yosyosyoyoyo" target="_blank">
-                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/q_logo.png' )); ?>" alt="アイコン">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/q_logo.png' )); ?>" alt="Qiitaアイコン" loading="lazy">
                                     </a>
                                 </li>
                                 <li class="p-profile__sns__list">
                                     <a href="//app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQM1ITMgoTd" target="_blank">
-                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.webp' )); ?>" alt="アイコン">
+                                        <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.webp' )); ?>" alt="BuildUpアイコン" loading="lazy">
                                     </a>
                                 </li>
                             </ul>
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="p-profile__img">
-                    <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.webp' )); ?>" alt="">
+                    <img src="<?php echo esc_url( get_theme_file_uri( '/images/top/profile.webp' )); ?>" alt="青い空と桜並木と川の風景" loading="lazy">
                 </div>
             </section>
             <!-- プロフィールここまで -->
@@ -182,7 +182,7 @@
                     </p>
                     <button class="p-contact__link">
                         <a href="//yosu-site.com/contact">
-                            <img class="c-icon__contact" src="<?php echo esc_url( get_theme_file_uri( '/images/top/mail2.png' )); ?>" alt="お問い合わせリンクボタン">
+                            <img class="c-icon__contact" src="<?php echo esc_url( get_theme_file_uri( '/images/top/mail2.png' )); ?>" alt="お問い合わせリンクボタン" loading="lazy">
                             <!-- <span>お問い合わせリンクボタン</span> -->
                         </a>
                     </button>
