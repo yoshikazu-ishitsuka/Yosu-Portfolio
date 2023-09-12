@@ -3,7 +3,7 @@
     <main class="l-main">
         <section class="p-visual__main">
             <div class="p-visual__main__inner">
-                <img class="p-visual__main__img" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual.webp' )); ?>" alt="風景写真">
+                <img class="p-visual__main__img toggleImg" src="<?php echo esc_url( get_theme_file_uri( '/images/top/main_visual_pc.webp' )); ?>" alt="風景写真">
                 <h2 class="p-visual__main__title">
                     <?php bloginfo( 'description' ); ?>
                 </h2>

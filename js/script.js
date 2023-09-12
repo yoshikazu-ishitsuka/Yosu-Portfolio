@@ -1,5 +1,14 @@
 const pageTop=document.querySelector(".p-page__top");jQuery(function(){const a=jQuery(pageTop);jQuery(window).on("scroll",function(){if(jQuery(this).scrollTop()>100){a.addClass("active")}else{a.removeClass("active")}})});jQuery("#page-top").click(function(){jQuery("body,html").animate({scrollTop:0},100);return false});jQuery(function(){jQuery(window).scroll(function(){jQuery(".fade").each(function(){const b=jQuery(this).offset().top;const a=jQuery(window).scrollTop();const c=jQuery(window).height();if(a>b-c){jQuery(this).addClass("view")}})})});
 
+jQuery(function () {
+  var width = jQuery(window).width();
+  if( width < 521 ){
+    jQuery(".toggleImg").each(function(){
+      jQuery(this).attr("src", jQuery(this).attr("src").replace("_pc","_sp"));
+    })
+  }
+});
+
 // const pageTop = document.querySelector( ".p-page__top" );
 // // const leadInner = jQuery('.l-header__inner');
 // // const adminBar = jQuery('.nojq');
