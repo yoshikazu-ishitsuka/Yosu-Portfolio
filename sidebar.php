@@ -1,5 +1,5 @@
 <!-- <article class="side-wrapper"> -->
-    <aside class="l-sidebar">
+    <aside class="l-sidebar bg lazyload">
         <div class="l-sidebar__main">
             <ul class="p-navigation__sidebar">
                 <?php

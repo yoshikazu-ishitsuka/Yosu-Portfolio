@@ -3,7 +3,7 @@
 .l-sidebar {
   width: 0;
   height: 100%;
-  background-image: url(../images/top/sky.webp);
+  // background-image: url(../images/top/sky.webp);
   position: absolute;
   background-position: center;
   background-size: cover;
@@ -14,6 +14,10 @@
   // transition: width 0.5s;
   // transition-property: display;
   // transition-duration: 0.5s;
+}
+
+.l-sidebar.bg.lazyloaded {
+  background-image: url(../images/top/sky.webp);
 }
 
 .l-sidebar::after {

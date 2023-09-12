@@ -114,13 +114,16 @@ h6 {
 .l-sidebar {
   width: 0;
   height: 100%;
-  background-image: url(../images/top/sky.webp);
   position: absolute;
   background-position: center;
   background-size: cover;
   top: 0;
   left: 100%;
   visibility: hidden; /* 初期状態で非表示 */
+}
+
+.l-sidebar.bg.lazyloaded {
+  background-image: url(../images/top/sky.webp);
 }
 
 .l-sidebar::after {
