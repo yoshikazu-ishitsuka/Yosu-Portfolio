@@ -402,6 +402,7 @@ th {
   display: block;
   line-height: 0;
   overflow: hidden;
+  background-color: #c3e7ff;
 }
 
 .c-text__copyright {
@@ -575,6 +576,7 @@ th {
 }
 .p-card__works__image:hover {
   transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .no-image {
