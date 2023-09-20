@@ -12,11 +12,18 @@
 			border-radius: 50%;
 			filter: invert( 100% );
 		}
-	}
+}
 
-	.c-icon__contact {
-		list-style: none;
-    width: 60px;
-		display: inline-block;
-		aspect-ratio: 1 / 1;
-	}
+.c-icon__contact {
+	list-style: none;
+	width: 60px;
+	display: inline-block;
+	aspect-ratio: 1 / 1;
+}
+
+.c-icon__twitter,
+.c-icon__github,
+.c-icon__qiita,
+.c-icon__buildup {
+	position: relative;
+}

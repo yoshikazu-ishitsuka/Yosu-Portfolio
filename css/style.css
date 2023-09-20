@@ -114,13 +114,16 @@ h6 {
 .l-sidebar {
   width: 0;
   height: 100%;
-  background-image: url(../images/top/sky.webp);
   position: absolute;
   background-position: center;
   background-size: cover;
   top: 0;
   left: 100%;
   visibility: hidden; /* 初期状態で非表示 */
+}
+
+.l-sidebar.bg.lazyloaded {
+  background-image: url(../images/top/sky.webp);
 }
 
 .l-sidebar::after {
@@ -181,10 +184,18 @@ h6 {
   aspect-ratio: 1/1;
 }
 
+.c-icon__twitter,
+.c-icon__github,
+.c-icon__qiita,
+.c-icon__buildup {
+  position: relative;
+}
+
 .c-image__mask {
   display: block;
   line-height: 0;
   overflow: hidden;
+  background-color: #c3e7ff;
 }
 
 .c-text__copyright {
@@ -358,6 +369,7 @@ h6 {
 }
 .p-card__works__image:hover {
   transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .no-image {
@@ -562,6 +574,16 @@ h6 {
 .p-introduction__image {
   width: 80vw;
   height: auto;
+}
+
+.p-introduction__image--works {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.p-introduction__image--works:hover {
+  transform: scale(1.1);
 }
 
 .p-introduction__title, .p-introduction__title--works {
@@ -1087,6 +1109,40 @@ h6 {
   .p-profile__sns {
     gap: 30px;
   }
+}
+.p-profile__sns .c-icon__twitter::before {
+  content: "Twitter(X)";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: -1px;
+}
+.p-profile__sns .c-icon__github::before {
+  content: "GitHub";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: 4px;
+}
+.p-profile__sns .c-icon__qiita::before {
+  content: "Qiita";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: 8px;
+}
+.p-profile__sns .c-icon__buildup::before {
+  content: "Build Up";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+}
+.p-profile__sns .c-icon__buildup::after {
+  content: "おすすめ";
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  top: -16px;
 }
 
 .p-profile__img {
