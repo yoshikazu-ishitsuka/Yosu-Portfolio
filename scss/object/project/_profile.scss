@@ -140,6 +140,46 @@
   @include g.breakpoint( pc ) {
     gap: 30px;
   }
+
+
+  .c-icon__twitter::before {
+    content: 'Twitter(X)';
+    font-size: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: -1px;
+  }
+
+  .c-icon__github::before {
+    content: 'GitHub';
+    font-size: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 4px;
+  }
+
+  .c-icon__qiita::before {
+    content: 'Qiita';
+    font-size: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 8px;
+  }
+
+  .c-icon__buildup::before {
+    content: 'Build Up';
+    font-size: 10px;
+    position: absolute;
+    bottom: -20px;
+  }
+
+  .c-icon__buildup::after {
+    content: 'おすすめ';
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    top: -16px;
+  }
 }
 
 .p-profile__img {

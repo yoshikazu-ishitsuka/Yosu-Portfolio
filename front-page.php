@@ -57,22 +57,22 @@
                                 「各種リンク」
                             </p>
                             <ul class="p-profile__sns">
-                                <li class="p-profile__sns__list">
+                                <li class="p-profile__sns__list c-icon__twitter">
                                     <a href="//twitter.com/it_begi_yos815" target="_blank">
                                         <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/t_logo.png' )); ?>" alt="Twitterアイコン" loading="lazy">
                                     </a>
                                 </li>
-                                <li class="p-profile__sns__list">
+                                <li class="p-profile__sns__list c-icon__github">
                                     <a href="//github.com/yoshikazu-ishitsuka" target="_blank">
                                         <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/g_logo.png' )); ?>" alt="GitHubアイコン" loading="lazy">
                                     </a>
                                 </li>
-                                <li class="p-profile__sns__list">
+                                <li class="p-profile__sns__list c-icon__qiita">
                                     <a href="//qiita.com/yosyosyoyoyo" target="_blank">
                                         <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/q_logo.png' )); ?>" alt="Qiitaアイコン" loading="lazy">
                                     </a>
                                 </li>
-                                <li class="p-profile__sns__list">
+                                <li class="p-profile__sns__list c-icon__buildup">
                                     <a href="//app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQM1ITMgoTd" target="_blank">
                                         <img class="c-icon__sns" src="<?php echo esc_url( get_theme_file_uri( '/images/sns/b_logo.webp' )); ?>" alt="BuildUpアイコン" loading="lazy">
                                     </a>

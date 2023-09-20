@@ -184,6 +184,13 @@ h6 {
   aspect-ratio: 1/1;
 }
 
+.c-icon__twitter,
+.c-icon__github,
+.c-icon__qiita,
+.c-icon__buildup {
+  position: relative;
+}
+
 .c-image__mask {
   display: block;
   line-height: 0;
@@ -1102,6 +1109,40 @@ h6 {
   .p-profile__sns {
     gap: 30px;
   }
+}
+.p-profile__sns .c-icon__twitter::before {
+  content: "Twitter(X)";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: -1px;
+}
+.p-profile__sns .c-icon__github::before {
+  content: "GitHub";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: 4px;
+}
+.p-profile__sns .c-icon__qiita::before {
+  content: "Qiita";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: 8px;
+}
+.p-profile__sns .c-icon__buildup::before {
+  content: "Build Up";
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+}
+.p-profile__sns .c-icon__buildup::after {
+  content: "おすすめ";
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  top: -16px;
 }
 
 .p-profile__img {
